@@ -23,7 +23,7 @@ const HeroSection = () => {
           <div className="lg:w-1/4 w-1/2 m-10 lg:mt-0">
             <div className="border-4 rounded-xl overflow-hidden h-25">
               <img
-                src="/src/assets/feature1.png"
+                src="/public/assets/feature1.png"
                 alt="Hero Image"
                 className="object-cover w-full h-full"
               />

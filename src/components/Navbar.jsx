@@ -19,7 +19,7 @@ const Navbar = () => {
             <NavLink to="/" exact="true">
               <img
                 className="h-10 w-10 rounded-lg"
-                src="/src/assets/logo.jpg"
+                src="/public/assets/logo.jpg"
                 alt="Logo"
               />
             </NavLink>

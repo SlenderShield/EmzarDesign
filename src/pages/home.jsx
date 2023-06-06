@@ -7,25 +7,25 @@ import HeroSection from "../components/Hero";
 const Home = () => {
   const images = [
     {
-      src: "/src/assets/master_bedroom/main_bedroom.png",
+      src: "/public/assets/master_bedroom/main_bedroom.png",
       alt: "Main bedroom",
       heading: "The Main Bedroom",
       description: "Bedroom tailored to your needs",
     },
     {
-      src: "/src/assets/srikara_enclave/dining.png",
+      src: "/public/assets/srikara_enclave/dining.png",
       alt: "Dining Place",
       heading: "Dinning Place",
       description: "Place to enjoy your meals with your family",
     },
     {
-      src: "/src/assets/SNN Clermont apartment/kitchen.png",
+      src: "/public/assets/SNN Clermont apartment/kitchen.png",
       alt: "Kitchen",
       heading: "Kitchen Area",
       description: "Kitchen with all the modern amenities",
     },
     {
-      src: "/src/assets/study-gaming room/Study.png",
+      src: "/public/assets/study-gaming room/Study.png",
       alt: "Study & Gaming Room",
       heading: "Study & Gaming Room",
       description: "Study & Gaming Room for your kids",
