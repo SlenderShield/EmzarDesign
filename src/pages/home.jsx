@@ -7,13 +7,13 @@ import HeroSection from "../components/Hero";
 const Home = () => {
   const images = [
     {
-      src: "/src/assets/master bedroom/MainBedroom.png",
+      src: "/src/assets/master_bedroom/main_bedroom.png",
       alt: "Main bedroom",
       heading: "The Main Bedroom",
       description: "Bedroom tailored to your needs",
     },
     {
-      src: "/src/assets/srikara Enclave/Dining.png",
+      src: "/src/assets/srikara_enclave/dining.png",
       alt: "Dining Place",
       heading: "Dinning Place",
       description: "Place to enjoy your meals with your family",
