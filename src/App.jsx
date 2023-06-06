@@ -7,7 +7,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import Gallery from "./pages/gallery";
-import Info from "./components/info";
+import Info from "./components/Info";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollTop";
 
