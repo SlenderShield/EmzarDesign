@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
 
-  const isActivePage = (path) => {
-    return location.pathname === path;
-  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -34,7 +30,7 @@ const Navbar = () => {
             <div className="ml-4 flex items-center md:ml-6">
               <NavLink
                 to="/"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black active"
                 exact="true"
               >
                 Home

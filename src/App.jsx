@@ -9,6 +9,7 @@ import Projects from "./pages/projects";
 import Gallery from "./pages/gallery";
 import Info from "./components/info";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollTop";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
+      <ScrollToTop />
       <Footer />
     </Router>
   );
