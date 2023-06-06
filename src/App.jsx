@@ -8,6 +8,7 @@ import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import Gallery from "./pages/gallery";
 import Info from "./components/info";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
