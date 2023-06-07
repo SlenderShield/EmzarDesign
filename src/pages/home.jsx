@@ -50,13 +50,13 @@ const Home = () => {
           dynamicHeight={false}
         >
           {images.map((image, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative h-screen">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="object-cover h-96 w-96"
+                className="object-cover h-full w-full"
               />
-              <div className="absolute bottom-1/3 left-0 right-0 bg-opacity-80 p-4">
+              <div className="absolute bottom-1/2 left-0 right-0 bg-opacity-80 p-4">
                 <h2 className="text-4xl font-bold text-white">
                   {image.heading}
                 </h2>
