@@ -3,36 +3,36 @@ import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroSection from "../components/Hero";
+import ProjectsOverview from "../components/ProjectsOverview";
 
 const Home = () => {
   const images = [
     {
-      src: "/public/assets/master_bedroom/main_bedroom.png",
+      src: "/assets/master_bedroom/main_bedroom.png",
       alt: "Main bedroom",
       heading: "The Main Bedroom",
       description: "Bedroom tailored to your needs",
     },
     {
-      src: "/public/assets/srikara_enclave/dining.png",
+      src: "/assets/srikara_enclave/dining.png",
       alt: "Dining Place",
       heading: "Dinning Place",
       description: "Place to enjoy your meals with your family",
     },
     {
-      src: "/public/assets/SNN Clermont apartment/kitchen.png",
+      src: "/assets/SNN Clermont apartment/kitchen.png",
       alt: "Kitchen",
       heading: "Kitchen Area",
       description: "Kitchen with all the modern amenities",
     },
     {
-      src: "/public/assets/study-gaming room/Study.png",
+      src: "/assets/study-gaming room/Study.png",
       alt: "Study & Gaming Room",
       heading: "Study & Gaming Room",
       description: "Study & Gaming Room for your kids",
     },
     // Add more images with their respective details
   ];
-
   return (
     <div className="container mx-auto">
       <div className="flex justify-center ">
@@ -67,6 +67,7 @@ const Home = () => {
         </Carousel>
       </div>
       <HeroSection />
+      <ProjectsOverview />
       <div className="flex flex-row justify-center mt-8 bg-slate-300 ">
         <p className="text-xl text-black m-6">Ready to get started?</p>
         <div className="flex justify-center m-5">
