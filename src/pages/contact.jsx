@@ -19,13 +19,14 @@ const ContactUsPage = () => {
           <div className="mb-4">
             {/* Replace the iframe src attribute with your map embed code */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6397023331283!2d-73.98191428459407!3d40.73258897932951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f267f899b7%3A0x3995f259eb3e49c2!2sTimes%20Square%2C%20New%20York%2C%20NY%2010018%2C%20USA!5e0!3m2!1sen!2sin!4v1625162499594!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.640637464067!2d77.61560447494611!3d13.1219372872074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19889b3bb4dd%3A0x493f6d236c77867!2sEmzar%20Designs%20(Ayat%20Design)!5e0!3m2!1sen!2sin!4v1686156548991!5m2!1sen!2sin"
               width="100%"
               height="400"
-              allowFullScreen=""
+              allowfullscreen="true"
               loading="lazy"
-              title="Map Location"
+              title="Emzar Designs Location"
               className="rounded-md"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
