@@ -16,12 +16,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <NavLink to="/" exact="true">
+            <NavLink to="/" exact="true" className="flex items-center">
               <img
                 className="h-10 w-10 rounded-lg"
                 src="/assets/logo.jpg"
                 alt="Logo"
               />
+              <p className="text-black text-xl font-bold px-4">Emzar Designs</p>
             </NavLink>
           </div>
 
