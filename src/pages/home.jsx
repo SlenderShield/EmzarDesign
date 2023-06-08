@@ -43,10 +43,10 @@ const Home = () => {
           infiniteLoop={true}
           autoPlay={true}
           transitionTime={500}
-          interval={3000}
+          interval={300}
           stopOnHover={true}
           emulateTouch={true}
-          swipeable={true}
+          swipeable={false}
           dynamicHeight={false}
         >
           {images.map((image, index) => (
