@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroSection from "../components/Hero";
-import ProjectsOverview from "../components/ProjectsOverview";
+import NavigationMenu from "../components/NavigationCard";
 
 const Home = () => {
   const images = [
@@ -43,7 +43,7 @@ const Home = () => {
           infiniteLoop={true}
           autoPlay={true}
           transitionTime={500}
-          interval={300}
+          interval={3000}
           stopOnHover={true}
           emulateTouch={true}
           swipeable={false}
@@ -67,7 +67,7 @@ const Home = () => {
         </Carousel>
       </div>
       <HeroSection />
-      <ProjectsOverview />
+      <NavigationMenu />
       <div className="flex flex-row justify-center mt-8 bg-slate-300 ">
         <p className="text-xl text-black m-6">Ready to get started?</p>
         <div className="flex justify-center m-5">
