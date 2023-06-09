@@ -5,15 +5,17 @@ import Head from "../components/Head";
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "This is the description of Project 1",
-    images: ["image1.jpg", "image2.jpg", "image3.jpg"],
+    title: "Master Bedroom Concepts",
+    description:
+      "Luxury and Elegance: The aim is to create a sophisticated and upscale ambiance using high-quality materials, plush bedding, and refined furniture pieces.",
+    image: "/public/assets/master_bedroom/MBThree.png",
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "This is the description of Project 2",
-    images: ["image4.jpg", "image5.jpg", "image6.jpg"],
+    title: "Srikara Enclave Design",
+    description:
+      "The enclave is designed with careful consideration of the placement and orientation of homes, green spaces, and common areas. ",
+    image: "/public/assets/srikara_enclave/LivingRoom.png",
   },
   // Add more projects as needed
 ];
@@ -22,15 +24,15 @@ const ProjectsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Head pageTitle="Projects" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project) => (
           <Link
             key={project.id}
             to={`/projects/${project.id}`} // Include project ID in the URL
-            className="block rounded-lg overflow-hidden shadow-md"
+            className="block rounded-lg overflow-hidden shadow-md m-4"
           >
             <img
-              src={project.images[0]}
+              src={project.image}
               alt={project.title}
               className="w-full h-64 object-cover"
             />

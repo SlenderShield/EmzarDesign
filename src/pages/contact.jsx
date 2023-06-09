@@ -8,7 +8,7 @@ const ContactUsPage = () => {
     <div className="container mx-auto px-4 py-8">
       <Head pageTitle="Contact Us" />
 
-      <div className="flex flex-wrap -mx-4">
+      <div className="flex flex-wrap -mx-4 my-5">
         <div className="w-full lg:w-1/2 px-4 mb-8">
           <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
           {/* Contact form code goes here */}
