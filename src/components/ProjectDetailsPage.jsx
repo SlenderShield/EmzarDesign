@@ -17,38 +17,43 @@ const projects = [
   // Add more projects as needed
 ];
 
+// const ProjectDetailsPage = () => {
+//   const { projectId } = useParams();
+//   const project = projects.find((p) => p.id === parseInt(projectId));
+
+//   if (!project) {
+//     return <p>Project not found.</p>;
+//   }
+
+//   const { title, description, images } = project;
+
+//   return (
+//     <div className="container mx-auto px-4 py-8">
+//       <h1 className="text-3xl font-bold mb-4">{title}</h1>
+
+//       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+//         <div className="carousel">
+//           {images.map((image, index) => (
+//             <img
+//               key={index}
+//               src={image}
+//               alt={title}
+//               className="w-full h-auto object-cover"
+//             />
+//           ))}
+//         </div>
+
+//         <div>
+//           <p className="text-lg">{description}</p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ProjectDetailsPage;
+
 const ProjectDetailsPage = () => {
-  const { projectId } = useParams();
-  const project = projects.find((p) => p.id === parseInt(projectId));
-
-  if (!project) {
-    return <p>Project not found.</p>;
-  }
-
-  const { title, description, images } = project;
-
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">{title}</h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="carousel">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={title}
-              className="w-full h-auto object-cover"
-            />
-          ))}
-        </div>
-
-        <div>
-          <p className="text-lg">{description}</p>
-        </div>
-      </div>
-    </div>
-  );
+  return <div>HI</div>;
 };
-
 export default ProjectDetailsPage;
