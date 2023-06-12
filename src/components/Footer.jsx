@@ -5,10 +5,12 @@ import { AiOutlineMail, AiTwotonePhone } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="bg-black p-5 text-white ">
+    <footer className="bg-black p-5 text-white text-center">
       <div className="container mx-auto flex flex-wrap sm:justify-evenly flex-col sm:flex-row">
         <div className="flex flex-col">
-          <h3 className="text-lg font-bold mb-2 sm:mb-4 ">Quick Links</h3>
+          <h3 className="text-lg font-bold mb-2 sm:mb-4 ">
+            <span className="border-b-2 border-blue-400 pb-1">Quick Links</span>
+          </h3>
           <ul>
             <li>
               <Link to="/" className="text-white">
@@ -40,7 +42,9 @@ const Footer = () => {
 
         <div className="flex flex-col">
           <h3 className="text-lg font-bold mb-2 sm:mb-4  mt-4 sm:mt-0">
-            Social Links
+            <span className="border-b-2 border-blue-400 pb-1">
+              Social Links
+            </span>
           </h3>
           <ul>
             <li>
@@ -70,7 +74,9 @@ const Footer = () => {
 
         <div className="flex flex-col">
           <h3 className="text-lg font-bold mb-2 sm:mb-4 mt-4 sm:mt-0">
-            Company Info
+            <span className="border-b-2 border-blue-400 pb-1">
+              Company Info
+            </span>
           </h3>
           <address>
             <p>123 Main Street</p>
