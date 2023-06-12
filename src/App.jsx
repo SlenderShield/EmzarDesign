@@ -10,7 +10,7 @@ import Gallery from "./pages/gallery";
 import Info from "./components/Info";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollTop";
-import ProjectDetailsPage from "./components/projectDetailsPage";
+import ProjectDetailsPage from "./components/ProjectDetailsPage";
 
 function App() {
   return (
