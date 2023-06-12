@@ -34,7 +34,7 @@ const Home = () => {
     // Add more images with their respective details
   ];
   return (
-    <div className="container mx-auto">
+    <section className="container mx-auto">
       <div className="flex justify-center ">
         <Carousel
           showArrows={true}
@@ -68,7 +68,7 @@ const Home = () => {
       </div>
       <HeroSection />
       <NavigationMenu />
-      <div className="flex flex-row justify-center mt-8 bg-slate-300 ">
+      <div className="flex flex-row justify-center mt-8 bg-slate-300">
         <p className="text-xl text-black m-6">Ready to get started?</p>
         <div className="flex justify-center m-5">
           <Link
@@ -79,7 +79,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
