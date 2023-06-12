@@ -23,7 +23,11 @@ const projects = [
 const ProjectsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Head pageTitle="Projects" />
+      <Head
+        pageTitle="Projects"
+        backgroundImage="/public/assets/master_bedroom/MBTwo.png"
+        pageDescription="The projects that will tell you how yourz will be like.."
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project) => (
           <Link

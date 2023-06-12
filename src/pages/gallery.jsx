@@ -47,7 +47,11 @@ const GalleryPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Head pageTitle="Gallery" />
+      <Head
+        pageTitle="Gallery"
+        pageDescription="Images that give about our overview"
+        backgroundImage="/public/assets/srikara_enclave/dining.png"
+      />
 
       <div className="flex justify-center mb-8">
         <select

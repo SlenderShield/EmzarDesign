@@ -6,17 +6,29 @@ import Head from "../components/Head";
 const ContactUsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Head pageTitle="Contact Us" />
+      <Head
+        pageTitle="Contact Us"
+        backgroundImage="/public/assets/feature1.png"
+        pageDescription="Contact us for a free consultation"
+      />
 
       <div className="flex flex-wrap -mx-4 my-5">
         <div className="w-full lg:w-1/2 px-4 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-2xl font-bold mb-4 text-center md:text-left">
+            <span className="font-bold border-b-2 border-blue-400 pb-1 ">
+              Get in Touch :
+            </span>
+          </h2>
           {/* Contact form code goes here */}
           <ContactForm />
         </div>
 
         <div className="w-full lg:w-1/2 px-4 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Location</h2>
+          <h2 className="text-2xl font-bold mb-4 text-center md:text-left">
+            <span className="font-bold border-b-2 border-blue-400 pb-1">
+              Location :
+            </span>
+          </h2>
           <div className="mb-4">
             {/* Replace the iframe src attribute with your map embed code */}
             <iframe
@@ -33,28 +45,39 @@ const ContactUsPage = () => {
         </div>
 
         <div className="w-full px-4">
-          <h2 className="text-2xl font-bold mb-4">Communication Details</h2>
+          <h2 className="text-2xl font-bold mb-4 ">
+            <span className="border-b-2 border-blue-400 pb-1">
+              Communication Details :
+            </span>
+          </h2>
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/3 px-4 mb-4">
               <div className="flex items-center mb-2">
-                <FaMapMarkerAlt className="mr-2 text-gray-600" />
-                <span className="font-bold">Address:</span>
+                <FaMapMarkerAlt className="mr-2 text-blue-400" />
+
+                <span className="font-bold border-b-2 border-blue-400 pb-1">
+                  Address :
+                </span>
               </div>
-              <p>123 Main Street, City, Country</p>
+              <address>123 Main Street, City, Country</address>
             </div>
 
             <div className="w-full md:w-1/3 px-4 mb-4">
               <div className="flex items-center mb-2">
-                <FaPhone className="mr-2 text-gray-600" />
-                <span className="font-bold">Phone:</span>
+                <FaPhone className="mr-2 text-blue-400" />
+                <span className="font-bold border-b-2 border-blue-400 pb-1">
+                  Phone :
+                </span>
               </div>
               <p>+1 234 567 890</p>
             </div>
 
             <div className="w-full md:w-1/3 px-4 mb-4">
               <div className="flex items-center mb-2">
-                <FaEnvelope className="mr-2 text-gray-600" />
-                <span className="font-bold">Email:</span>
+                <FaEnvelope className="mr-2 text-blue-400 " />
+                <span className="font-bold border-b-2 border-blue-400 pb-1">
+                  Email :
+                </span>
               </div>
               <p>info@example.com</p>
             </div>

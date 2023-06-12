@@ -1,10 +1,31 @@
 import React from "react";
 
-const Head = ({ pageTitle }) => {
+const Head = ({ pageTitle, backgroundImage, pageDescription }) => {
+  const bgStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    filter: "brightness(70%)",
+  };
+
+  const backgroundColor = {
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+  };
+
+  const containerStyle = {
+    padding: "2rem",
+    textAlign: "center",
+  };
+
   return (
-    <div className="bg-white text-black m-1 rounded-md ">
-      <div className="container mx-auto p-5">
-        <h1 className="text-3xl font-bold text-center">{pageTitle}</h1>
+    <div className="bg-white text-black m-1 rounded-md" style={bgStyle}>
+      <div className="container mx-auto" style={backgroundColor}>
+        <div className="p-4 md:p-8 lg:p-12 text-white ml-10">
+          <p className="text-sm text-bold mb-1 uppercase">{pageDescription}</p>
+          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold uppercase">
+            {pageTitle}
+          </h1>
+        </div>
       </div>
     </div>
   );
