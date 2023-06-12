@@ -14,7 +14,7 @@ const ContactForm = () => {
       ) : (
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="name">
+            <label className="block text-white mb-2" htmlFor="name">
               Your Name:
             </label>
             <input
@@ -22,12 +22,13 @@ const ContactForm = () => {
               type="text"
               id="name"
               name="name"
+              placeholder="John Doe"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="email">
+            <label className="block text-white mb-2" htmlFor="email">
               Email Address:
             </label>
             <input
@@ -35,18 +36,20 @@ const ContactForm = () => {
               type="email"
               id="email"
               name="email"
+              placeholder="example@emzardesign.com"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="message">
+            <label className="block text-white mb-2" htmlFor="message">
               Message:
             </label>
             <textarea
               className="border border-gray-300 rounded-md px-3 py-2 w-full h-32"
               id="message"
               name="message"
+              placeholder="Your message here..."
               required
             ></textarea>
           </div>
