@@ -6,8 +6,8 @@ const NavigationMenu = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
   return (
-    <nav className="flex justify-center py-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4">
+    <div className="flex justify-center py-4">
+      <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 w-3/4 max-w-screen-xl mx-auto">
         <Link to="/projects" className="card-link" onClick={handleLinkClick}>
           <div className="card bg-gradient-to-r from-cyan-500 to-blue-500  rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2 aspect-auto">
             <h2 className="card-title text-xl font-semibold mb-2 text-white">
@@ -46,12 +46,12 @@ const NavigationMenu = () => {
               About Us
             </h2>
             <p className="card-description text-slate-200">
-              Contact us for your needs
+              Contact us anytime
             </p>
           </div>
         </Link>
       </div>
-    </nav>
+    </div>
   );
 };
 
