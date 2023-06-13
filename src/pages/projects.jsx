@@ -28,7 +28,7 @@ const ProjectsPage = () => {
         backgroundImage="/public/assets/master_bedroom/MBTwo.png"
         pageDescription="The projects that will tell you how yourz will be like.."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-4/5">
         {projects.map((project) => (
           <Link
             key={project.id}

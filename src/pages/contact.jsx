@@ -5,14 +5,14 @@ import Head from "../components/Head";
 
 const ContactUsPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 ">
       <Head
         pageTitle="Contact Us"
         backgroundImage="/public/assets/feature1.png"
         pageDescription="Contact us for a free consultation"
       />
 
-      <div className="flex flex-wrap -mx-4 my-5">
+      <div className="flex flex-wrap mx-auto my-5 w-4/5 justify-between">
         <div className="w-full lg:w-1/2 px-4 mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center md:text-left">
             <span className="font-bold border-b-2 border-blue-400 pb-1 ">

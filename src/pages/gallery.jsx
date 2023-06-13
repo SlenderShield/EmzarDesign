@@ -53,23 +53,38 @@ const GalleryPage = () => {
         backgroundImage="/public/assets/srikara_enclave/dining.png"
       />
 
-      <div className="flex justify-center mb-8">
-        <select
-          value={selectedProject}
-          onChange={(e) => handleProjectChange(e.target.value)}
-          className="px-4 py-2 border rounded-md"
-        >
-          {projectOptions.map((option) => (
-            <option key={option.id} value={option.id}>
-              {option.title}
-            </option>
-          ))}
-        </select>
-      </div>
+      <div className="mx-auto w-4/5">
+        <div className="flex justify-center mb-8">
+          <select
+            value={selectedProject}
+            onChange={(e) => handleProjectChange(e.target.value)}
+            className="px-4 py-2 border rounded-md"
+          >
+            {projectOptions.map((option) => (
+              <option key={option.id} value={option.id}>
+                {option.title}
+              </option>
+            ))}
+          </select>
+        </div>
 
-      {filteredProject && (
-        <>
-          <h2 className="text-xl font-bold mb-4">{filteredProject.title}</h2>
+        {filteredProject && (
+          <>
+            <h2 className="text-xl font-bold mb-4">{filteredProject.title}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredImages.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt="Gallery Image"
+                  className="w-full h-auto object-cover"
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {!filteredProject && (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredImages.map((image, index) => (
               <img
@@ -80,21 +95,8 @@ const GalleryPage = () => {
               />
             ))}
           </div>
-        </>
-      )}
-
-      {!filteredProject && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {filteredImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt="Gallery Image"
-              className="w-full h-auto object-cover"
-            />
-          ))}
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ import Info from "./components/Info";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollTop";
 import ProjectDetailsPage from "./components/ProjectDetailsPage";
-import CalendlyButton from "./components/Calendly";
+import CalendlyButton from "./components/Meet_Greet";
 
 function App() {
   return (
