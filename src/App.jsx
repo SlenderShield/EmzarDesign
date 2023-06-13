@@ -11,6 +11,7 @@ import Info from "./components/Info";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollTop";
 import ProjectDetailsPage from "./components/ProjectDetailsPage";
+import CalendlyButton from "./components/Calendly";
 
 function App() {
   return (
@@ -29,6 +30,16 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
+      <CalendlyButton
+        link={"https://calendly.com/slendershield/30min"}
+        description={"Schedule a Meeting"}
+        height={64}
+      />
+      <CalendlyButton
+        link={"https://wa.me/+919844083281"}
+        description={"Whatsapp"}
+        height={110}
+      />
       <ScrollToTop />
       <Footer />
     </Router>
