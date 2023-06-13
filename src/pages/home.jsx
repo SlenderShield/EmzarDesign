@@ -10,7 +10,7 @@ const Home = () => {
     {
       src: "/assets/master_bedroom/main_bedroom.png",
       alt: "Main bedroom",
-      heading: "The Main Bedroom",
+      heading: "The Bedroom",
       description: "Bedroom tailored to your needs",
     },
     {
@@ -28,11 +28,14 @@ const Home = () => {
     {
       src: "/assets/study-gaming room/Study.png",
       alt: "Study & Gaming Room",
-      heading: "Study & Gaming Room",
-      description: "Study & Gaming Room for your kids",
+      heading: "Study Room",
+      description: "Study Room for your kids",
     },
     // Add more images with their respective details
   ];
+  const backgroundColor = {
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+  };
   return (
     <section className="container mx-auto">
       <div className="flex justify-center ">
@@ -54,13 +57,15 @@ const Home = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="object-cover h-full w-full"
+                className="object-cover h-full w-full brightness-10"
               />
               <div className="absolute bottom-1/2 left-0 right-0 bg-opacity-80 p-4">
-                <h2 className="text-4xl font-bold text-white">
+                <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white uppercase">
                   {image.heading}
                 </h2>
-                <p className="text-white mt-2">{image.description}</p>
+                <p className="text-white mt-2 md:text-xl">
+                  {image.description}
+                </p>
               </div>
             </div>
           ))}
