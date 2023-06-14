@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import images from "../images";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
             <NavLink to="/" exact="true" className="flex items-center">
               <img
                 className="h-10 w-10 rounded-lg"
-                src="/assets/logo.jpg"
+                src={images["features"].logo}
                 alt="Logo"
               />
               <p className="text-black text-xl font-bold px-4">Emzar Designs</p>

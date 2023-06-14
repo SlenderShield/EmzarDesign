@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import images from "../images";
 
 const HeroSection = () => {
   return (
@@ -23,7 +24,7 @@ const HeroSection = () => {
           <div className="lg:w-1/4 w-1/2 m-10 lg:mt-0">
             <div className="border-4 rounded-xl overflow-hidden h-25">
               <img
-                src="/assets/feature1.png"
+                src={images["features"].one}
                 alt="Hero Image"
                 className="object-cover w-full h-full"
               />

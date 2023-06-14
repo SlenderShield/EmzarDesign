@@ -1,12 +1,13 @@
 import React from "react";
 import Head from "../components/Head";
+import images from "../images";
 
 const AboutUsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Head
         pageTitle="About Us"
-        backgroundImage="/public/assets/master_bedroom/MBTwo.png"
+        backgroundImage={images["Master Bedroom"].mb_side_wide}
         pageDescription="The company you can rely on."
       />
 
@@ -45,12 +46,12 @@ const AboutUsPage = () => {
           <div className="bg-white rounded-lg p-4 shadow-md">
             <div className="flex lg:flex-col gap-3 md:gap-8 justify-evenly items-stretch">
               <img
-                src="/public/assets/srikara_enclave/Enscape_2023-04-17-09-30-59.png"
+                src={images["Srikara_Enclave"].living_room}
                 alt="Side Image"
                 className="w-36 md:w-48 h-auto object-cover rounded-lg aspect-square"
               />
               <img
-                src="/public/assets/srikara_enclave/Enscape_2023-04-17-09-42-24.png"
+                src={images["Srikara_Enclave"].tv_room_side}
                 alt="Side Image"
                 className="w-36 md:w-48 h-auto object-cover rounded-lg aspect-square"
               />
@@ -59,20 +60,20 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-8">
-        <div className="w-2/3">
+      <div className="flex justify-center">
+        <div className="w-4/5">
           <h2 className="text-3xl font-bold mb-5">
             <span className="border-b-2 border-blue-400 pb-1">Our Team :</span>
           </h2>
-          <div className="bg-white rounded-lg p-4 shadow-md">
+          <div className="rounded-lg p-4 shadow-md flex">
             <div className="flex justify-center">
               <img
-                src="team-member.jpg"
+                src={images["features"].ceo}
                 alt="Team Member"
                 className="w-48 h-auto object-cover rounded-lg"
               />
             </div>
-            <h3 className="text-lg font-bold mb-2 text-center">John Doe</h3>
+            <h3 className="text-lg font-bold mb-2 text-center">Ayesha Bhanu</h3>
             <p className="text-gray-600 text-center">Founder & CEO</p>
           </div>
         </div>

@@ -4,34 +4,34 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroSection from "../components/Hero";
 import NavigationMenu from "../components/NavigationCard";
+import images from "../images";
 
 const Home = () => {
-  const images = [
+  const image_array = [
     {
-      src: "/assets/master_bedroom/main_bedroom.png",
+      src: images["Master Bedroom"].mb_view,
       alt: "Main bedroom",
       heading: "The Bedroom",
       description: "Bedroom tailored to your needs",
     },
     {
-      src: "/assets/srikara_enclave/dining.png",
+      src: images["Srikara_Enclave"].dining_area,
       alt: "Dining Place",
       heading: "Dinning Place",
       description: "Place to enjoy your meals with your family",
     },
     {
-      src: "/assets/SNN Clermont apartment/kitchen.png",
+      src: images["SNN_Clermont_Apartment"].kitchen_front,
       alt: "Kitchen",
       heading: "Kitchen Area",
       description: "Kitchen with all the modern amenities",
     },
     {
-      src: "/assets/study-gaming room/Study.png",
+      src: images["Study_Gaming_Room"].gaming_view,
       alt: "Study & Gaming Room",
       heading: "Study Room",
       description: "Study Room for your kids",
     },
-    // Add more images with their respective details
   ];
   const backgroundColor = {
     backgroundColor: "rgba(0, 0, 0, 0.3)",
@@ -52,7 +52,7 @@ const Home = () => {
           swipeable={false}
           dynamicHeight={false}
         >
-          {images.map((image, index) => (
+          {image_array.map((image, index) => (
             <div key={index} className="relative h-screen">
               <img
                 src={image.src}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Head from "../components/Head";
+import images from "../images";
 
 const projects = [
   {
@@ -8,14 +9,28 @@ const projects = [
     title: "Master Bedroom Concepts",
     description:
       "Luxury and Elegance: The aim is to create a sophisticated and upscale ambiance using high-quality materials, plush bedding, and refined furniture pieces.",
-    image: "/public/assets/master_bedroom/MBThree.png",
+    image: images["Master Bedroom"].mb_view,
   },
   {
     id: 2,
     title: "Srikara Enclave Design",
     description:
       "The enclave is designed with careful consideration of the placement and orientation of homes, green spaces, and common areas. ",
-    image: "/public/assets/srikara_enclave/LivingRoom.png",
+    image: images["Srikara_Enclave"].living_room,
+  },
+  {
+    id: 3,
+    title: "SNN Clermont Apartment",
+    description:
+      "The apartment is designed with careful consideration of the placement and orientation of homes, green spaces, and common areas. ",
+    image: images["SNN_Clermont_Apartment"].tv_room_front,
+  },
+  {
+    id: 3,
+    title: "Study Gaming Room",
+    description:
+      " The study room is a space that should reflect a person’s character and individuality. ",
+    image: images["Study_Gaming_Room"].tv_station,
   },
   // Add more projects as needed
 ];

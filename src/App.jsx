@@ -33,12 +33,12 @@ function App() {
       <CalendlyButton
         link={"https://calendly.com/slendershield/30min"}
         description={"Schedule a Meeting"}
-        height={64}
+        height={96}
       />
       <CalendlyButton
         link={"https://wa.me/+919844083281"}
         description={"Whatsapp"}
-        height={110}
+        height={150}
       />
       <ScrollToTop />
       <Footer />

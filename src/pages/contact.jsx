@@ -2,13 +2,14 @@ import React from "react";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
 import Head from "../components/Head";
+import images from "../images";
 
 const ContactUsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8 ">
       <Head
         pageTitle="Contact Us"
-        backgroundImage="/public/assets/feature1.png"
+        backgroundImage={images["Srikara_Enclave"].dining_area}
         pageDescription="Contact us for a free consultation"
       />
 
