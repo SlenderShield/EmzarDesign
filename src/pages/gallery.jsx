@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Head from "../components/Head";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import images from "../images";
+
 const projects = [
   {
     id: 1,
@@ -53,20 +56,26 @@ const projects = [
     ],
   },
 ];
+
 const GalleryPage = () => {
   const [selectedProject, setSelectedProject] = useState("all");
-  const [enlargedImage, setEnlargedImage] = useState(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(null);
+  const carouselRef = useRef(null);
 
   const handleProjectChange = (project) => {
     setSelectedProject(project);
+    setActiveImageIndex(null);
   };
 
-  const handleImageClick = (image) => {
-    setEnlargedImage(image);
+  const handleImageClick = (index) => {
+    setActiveImageIndex(index);
   };
 
-  const handleImageClose = () => {
-    setEnlargedImage(null);
+  const handleScreenClick = (event) => {
+    // Check if the click event originated from the carousel or its children
+    if (carouselRef.current && !carouselRef.current.contains(event.target)) {
+      setActiveImageIndex(null);
+    }
   };
 
   const filteredProject =
@@ -88,24 +97,21 @@ const GalleryPage = () => {
   ];
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (enlargedImage && !event.target.closest(".enlarged-image")) {
-        handleImageClose();
-      }
-    };
-
-    window.addEventListener("click", handleClickOutside);
-
+    document.addEventListener("click", handleScreenClick);
     return () => {
-      window.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("click", handleScreenClick);
     };
-  }, [enlargedImage]);
+  }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div
+      className={`container mx-auto px-4 py-8 ${
+        activeImageIndex !== null ? "carousel-active" : ""
+      }`}
+    >
       <Head
         pageTitle="Gallery"
-        pageDescription="Images that give about our overview"
+        pageDescription="Images that give an overview of our projects"
         backgroundImage={images["Srikara_Enclave"].dining_view}
       />
 
@@ -137,49 +143,59 @@ const GalleryPage = () => {
                 <div
                   key={index}
                   className="relative overflow-hidden"
-                  style={{ aspectRatio: "1/1" }}
+                  style={{ aspectRatio: "1/1", cursor: "pointer" }}
+                  onClick={() => handleImageClick(index)}
                 >
                   <img
                     src={image}
                     alt="Gallery Image"
-                    className="w-full h-full object-cover cursor-pointer transform hover:scale-110 transition-transform duration-300"
-                    onClick={() => handleImageClick(image)}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               ))}
             </div>
+            {activeImageIndex !== null && (
+              <div
+                className="fixed top-0 left-0 -bottom-24 right-0 m-auto w-2/3 h-2/3 flex items-center justify-center bg-black bg-opacity-10 carousel-overlay"
+                onClick={handleScreenClick} // Close carousel on click outside the image
+              >
+                <Carousel
+                  ref={carouselRef}
+                  selectedItem={activeImageIndex}
+                  showThumbs={false}
+                  infiniteLoop={true}
+                  emulateTouch={true}
+                  swipeable={true}
+                  showStatus={false}
+                  onClickItem={() => setActiveImageIndex(null)}
+                >
+                  {filteredImages.map((image, index) => (
+                    <div key={index}>
+                      <img src={image} alt="Gallery Image" />
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
+            )}
           </>
         )}
 
         {!filteredProject && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
             {filteredImages.map((image, index) => (
               <div
                 key={index}
                 className="relative overflow-hidden"
-                style={{ aspectRatio: "1/1" }}
+                style={{ aspectRatio: "1/1", cursor: "pointer" }}
+                onClick={() => handleImageClick(index)}
               >
                 <img
                   src={image}
                   alt="Gallery Image"
-                  className="w-full h-full object-cover cursor-pointer transform hover:scale-110 transition-transform duration-300"
-                  onClick={() => handleImageClick(image)}
+                  className="w-full h-full object-cover"
                 />
               </div>
             ))}
-          </div>
-        )}
-
-        {enlargedImage && (
-          <div
-            className="fixed top-0 left-0 -bottom-44 right-0 m-auto w-2/3 h-2/3 flex items-center justify-center bg-black bg-opacity-75"
-            onClick={handleImageClose}
-          >
-            <img
-              src={enlargedImage}
-              alt="Enlarged Image"
-              className="max-h-full max-w-full"
-            />
           </div>
         )}
       </div>
