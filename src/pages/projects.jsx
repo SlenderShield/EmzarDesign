@@ -40,15 +40,15 @@ const ProjectsPage = () => {
     <div className="container mx-auto px-4 py-8">
       <Head
         pageTitle="Projects"
-        backgroundImage="/public/assets/master_bedroom/MBTwo.png"
-        pageDescription="The projects that will tell you how yourz will be like.."
+        backgroundImage={images["Master Bedroom"].mb_side_wide}
+        pageDescription="Portfolio of our projects"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-4/5">
         {projects.map((project) => (
           <Link
             key={project.id}
             to={`/projects/${project.id}`} // Include project ID in the URL
-            className="block rounded-lg overflow-hidden shadow-md m-4"
+            className="block rounded-lg overflow-hidden shadow-md m-4 bg-slate-600 hover:bg-slate-500 transition duration-300 ease-in-out"
           >
             <img
               src={project.image}
@@ -56,8 +56,12 @@ const ProjectsPage = () => {
               className="w-full h-64 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-              <p className="text-gray-600">{project.description}</p>
+              <h2 className="text-xl font-bold mb-2 text-white">
+                <span className="border-b-2 border-slate-400 py-1">
+                  {project.title}{" "}
+                </span>
+              </h2>
+              <p className="text-slate-200">{project.description}</p>
             </div>
           </Link>
         ))}
