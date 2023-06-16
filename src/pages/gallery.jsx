@@ -103,10 +103,12 @@ const GalleryPage = () => {
     };
   }, []);
 
+  const isCarouselActive =
+    selectedProject !== "all" && activeImageIndex !== null;
   return (
     <div
       className={`container mx-auto px-4 py-8 ${
-        activeImageIndex !== null ? "carousel-active" : ""
+        isCarouselActive ? "carousel-active" : ""
       }`}
     >
       <Head
