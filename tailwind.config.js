@@ -1,7 +1,7 @@
 // tailwind.config.js
 module.exports = {
     mode: 'jit',
-    content: ['./index.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+    content: ['./index.html', './**/*.{js,jsx,ts,tsx,vue}'],
     theme: {
         extend: {},
         theme: {
