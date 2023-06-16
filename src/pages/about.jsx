@@ -60,21 +60,28 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center my-10">
         <div className="w-4/5">
           <h2 className="text-3xl font-bold mb-5">
-            <span className="border-b-2 border-blue-400 pb-1">Our Team :</span>
+            <span className="border-b-2 border-blue-400 pb-1">The Team:</span>
           </h2>
-          <div className="rounded-lg p-4 shadow-md flex">
-            <div className="flex justify-center">
-              <img
-                src={images["features"].ceo}
-                alt="Team Member"
-                className="w-48 h-auto object-cover rounded-lg"
-              />
+          <div className="bg-white rounded-lg p-4 shadow-md flex flex-col items-center md:flex-row md:items-start">
+            <img
+              src={images["features"].ceo}
+              alt="Team Member"
+              className="w-48 h-auto object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4 aspect-auto"
+            />
+            <div className="text-center md:text-left py-2 md:py-0">
+              <h3 className="text-2xl font-bold mb-2 text-black underline underline-offset-4">
+                Ayesha Bhanu
+              </h3>
+              <p className="text-gray-600 text-lg mb-2">Founder & CEO</p>
+              <p className="text-gray-600 lg:w-4/5 md:text-justify text-center">
+                Ayesha Bhanu is the founder and CEO of our company. With her
+                strong leadership and visionary approach, she has been
+                instrumental in guiding our organization towards success.
+              </p>
             </div>
-            <h3 className="text-lg font-bold mb-2 text-center">Ayesha Bhanu</h3>
-            <p className="text-gray-600 text-center">Founder & CEO</p>
           </div>
         </div>
       </div>
