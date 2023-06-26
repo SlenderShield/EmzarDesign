@@ -23,7 +23,9 @@ const Navbar = () => {
                 src={images["features"].logo}
                 alt="Logo"
               />
-              <p className="text-black text-xl font-bold px-4">Emzar Designs</p>
+              <p className="text-black text-xl font-bold px-4 font-serif">
+                Emzar Designs
+              </p>
             </NavLink>
           </div>
 

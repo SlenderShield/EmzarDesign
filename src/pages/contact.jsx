@@ -44,46 +44,6 @@ const ContactUsPage = () => {
             ></iframe>
           </div>
         </div>
-
-        <div className="w-full px-4">
-          <h2 className="text-2xl font-bold mb-4 ">
-            <span className="border-b-2 border-blue-400 pb-1">
-              Communication Details :
-            </span>
-          </h2>
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/3 px-4 mb-4">
-              <div className="flex items-center mb-2">
-                <FaMapMarkerAlt className="mr-2 text-blue-400" />
-
-                <span className="font-bold border-b-2 border-blue-400 pb-1">
-                  Address :
-                </span>
-              </div>
-              <address>123 Main Street, City, Country</address>
-            </div>
-
-            <div className="w-full md:w-1/3 px-4 mb-4">
-              <div className="flex items-center mb-2">
-                <FaPhone className="mr-2 text-blue-400" />
-                <span className="font-bold border-b-2 border-blue-400 pb-1">
-                  Phone :
-                </span>
-              </div>
-              <p>+1 234 567 890</p>
-            </div>
-
-            <div className="w-full md:w-1/3 px-4 mb-4">
-              <div className="flex items-center mb-2">
-                <FaEnvelope className="mr-2 text-blue-400 " />
-                <span className="font-bold border-b-2 border-blue-400 pb-1">
-                  Email :
-                </span>
-              </div>
-              <p>info@example.com</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -8,13 +8,16 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 text-center">
         <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="lg:w-1/2">
-            <h1 className="text-4xl font-bold text-center lg:text-left mb-5">
+            <h1 className="text-4xl font-bold text-center lg:text-left mb-5 font-serif">
               Welcome to Emzar Designs
             </h1>
+            <h2 className="text-2xl font-bold text-center lg:text-left mb-2">
+              Desire meets a new Design
+            </h2>
             <p className="text-lg text-center lg:text-left mr-5">
-              Emzar Designs, located in the vibrant city of Bangalore,
-              Karnataka, is a leading premium interior brand that specializes in
-              urban and innovative design.
+              Emzar Designs, located in the vibrant city of Bangalore, is a
+              leading premium interior brand that specializes in urban and
+              innovative design.
             </p>
             <p className="text-lg text-center lg:text-left mr-5">
               Our core belief is centered around creating 100% customized spaces

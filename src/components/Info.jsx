@@ -4,16 +4,18 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Info = () => {
   return (
-    <div className="flex justify-around items-center m-4">
+    <div className="flex justify-between items-center m-4 mx-10">
       {/* Mail Link */}
-      <a href="mailto:contact@example.com" className="text-white mr-2">
-        <AiOutlineMail className="inline-block mr-1" />
-        contact@example.com
-      </a>
-      <a href="tel:6362037006" className="text-white">
-        <AiTwotonePhone className="inline-block mb-1 mr-1" />
-        6362037006
-      </a>
+      <div className="flex flex-col">
+        <a href="mailto:contact@example.com" className="text-white mb-2">
+          <AiOutlineMail className="inline-block mr-1" />
+          contact@example.com
+        </a>
+        <a href="tel:6362037006" className="text-white hidden sm:block">
+          <AiTwotonePhone className="inline-block mb-1 mr-1" />
+          6362037006
+        </a>
+      </div>
 
       {/* Social Links */}
       <div className="flex items-center">
