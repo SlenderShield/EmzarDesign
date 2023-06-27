@@ -1,6 +1,6 @@
 import React from "react";
 
-const CalendlyButton = ({ link, description, height }) => {
+const ContactButton = ({ link, description, height }) => {
   const handleRedirect = () => {
     window.open(link, "_blank");
   };
@@ -23,4 +23,4 @@ const CalendlyButton = ({ link, description, height }) => {
   );
 };
 
-export default CalendlyButton;
+export default ContactButton;
