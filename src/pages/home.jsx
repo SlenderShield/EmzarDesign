@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroSection from "../components/Hero";
 import NavigationMenu from "../components/NavigationCard";
+import CallToAction from "../components/CallToAction";
 import images from "../images";
 
 const Home = () => {
@@ -57,13 +57,13 @@ const Home = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="object-cover h-full w-full brightness-10"
+                className="object-fit md:object-cover h-full w-full brightness-10"
               />
               <div className="absolute bottom-1/2 left-0 right-0 bg-opacity-80 p-4">
-                <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white uppercase">
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white uppercase">
                   {image.heading}
                 </h2>
-                <p className="text-white mt-2 md:text-xl">
+                <p className="text-white mt-2 text-xl md:text-2xl">
                   {image.description}
                 </p>
               </div>
@@ -73,17 +73,11 @@ const Home = () => {
       </div>
       <HeroSection />
       <NavigationMenu />
-      <div className="flex flex-row justify-center mt-8 bg-slate-300">
-        <p className="text-xl text-black m-6">Ready to get started?</p>
-        <div className="flex justify-center m-5">
-          <Link
-            to="/contact-us"
-            className="bg-blue-500 hover:bg-blue-700 hover:text-white text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out flex items-center"
-          >
-            Get Free Consultancy
-          </Link>
-        </div>
-      </div>
+      <CallToAction
+        title={"Ready to get started?"}
+        description={"Get Free Consultancy"}
+        link={"contact-us"}
+      />
     </section>
   );
 };
