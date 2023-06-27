@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Master Bedroom Concepts",
     description:
-      "Luxury and Elegance: The aim is to create a sophisticated and upscale ambiance using high-quality materials, plush bedding, and refined furniture pieces.",
+      "The aim is to create a sophisticated and upscale ambiance using high-quality materials, plush bedding, and refined furniture pieces.",
     image: images["Master Bedroom"].mb_view,
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     image: images["SNN_Clermont_Apartment"].tv_room_front,
   },
   {
-    id: 3,
+    id: 4,
     title: "Study Gaming Room",
     description:
       " The study room is a space that should reflect a person’s character and individuality. ",

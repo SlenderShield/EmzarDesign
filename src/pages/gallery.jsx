@@ -118,11 +118,11 @@ const GalleryPage = () => {
       />
 
       <div className="mx-auto w-4/5">
-        <div className="my-8 text-center">
+        <div className="my-4 text-right">
           <select
             value={selectedProject}
             onChange={(e) => handleProjectChange(e.target.value)}
-            className="px-4 py-2 border rounded-md"
+            className="px-2 py-1 border rounded-md"
           >
             {projectOptions.map((option) => (
               <option key={option.id} value={option.id}>
