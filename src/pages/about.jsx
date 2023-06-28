@@ -11,8 +11,8 @@ const AboutUsPage = () => {
         pageDescription="The company you can rely on."
       />
 
-      <div className="mx-auto w-4/5 mt-10 flex flex-col lg:flex-row">
-        <div className="mb-8 lg:w-2/3 lg:pr-10">
+      <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10 flex flex-col lg:flex-row">
+        <div className="mb-8 lg:w-2/3 lg:pr-6">
           <h2 className="text-3xl font-bold mb-5">
             <span className="border-b-2 border-blue-400 pb-1">
               Company Details :
@@ -42,18 +42,18 @@ const AboutUsPage = () => {
             comes to life seamlessly.
           </p>
         </div>
-        <div className="flex justify-center lg:w-1/3">
+        <div className="flex justify-center xl:w-1/3">
           <div className="bg-white rounded-lg p-4 shadow-md">
-            <div className="flex lg:flex-col gap-3 md:gap-8 justify-evenly items-stretch">
+            <div className="flex lg:flex-col gap-3 md:gap-8 justify-center items-center">
               <img
                 src={images["Srikara_Enclave"].living_room}
                 alt="Side Image"
-                className="w-36 md:w-48 h-auto object-cover rounded-lg aspect-square"
+                className="w-24 md:w-48 h-auto object-cover rounded-lg aspect-square"
               />
               <img
                 src={images["Srikara_Enclave"].tv_room_side}
                 alt="Side Image"
-                className="w-36 md:w-48 h-auto object-cover rounded-lg aspect-square"
+                className="w-24 md:w-48 h-auto object-cover rounded-lg aspect-square"
               />
             </div>
           </div>

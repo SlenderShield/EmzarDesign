@@ -56,7 +56,6 @@ const projects = [
     ],
   },
 ];
-
 const GalleryPage = () => {
   const [selectedProject, setSelectedProject] = useState("all");
   const [activeImageIndex, setActiveImageIndex] = useState(null);
@@ -73,7 +72,9 @@ const GalleryPage = () => {
 
   const handleScreenClick = (event) => {
     // Check if the click event originated from the carousel or its children
-    if (carouselRef.current && !carouselRef.current.contains(event.target)) {
+    const clickedOnCarousel = carouselRef.current;
+
+    if (!clickedOnCarousel) {
       setActiveImageIndex(null);
     }
   };
@@ -105,6 +106,9 @@ const GalleryPage = () => {
 
   const isCarouselActive =
     selectedProject !== "all" && activeImageIndex !== null;
+
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+
   return (
     <div
       className={`container mx-auto px-4 py-8 ${
@@ -146,7 +150,7 @@ const GalleryPage = () => {
                   key={index}
                   className="relative overflow-hidden"
                   style={{ aspectRatio: "1/1", cursor: "pointer" }}
-                  onClick={() => handleImageClick(index)}
+                  onClick={() => !isMobile && handleImageClick(index)} // Add the check for isMobile
                 >
                   <img
                     src={image}
@@ -156,40 +160,41 @@ const GalleryPage = () => {
                 </div>
               ))}
             </div>
-            {activeImageIndex !== null && (
-              <div
-                className="fixed top-0 left-0 -bottom-24 right-0 m-auto w-2/3 h-2/3 flex items-center justify-center bg-black bg-opacity-10 carousel-overlay"
-                onClick={handleScreenClick} // Close carousel on click outside the image
-              >
-                <Carousel
-                  ref={carouselRef}
-                  selectedItem={activeImageIndex}
-                  showThumbs={false}
-                  infiniteLoop={true}
-                  emulateTouch={true}
-                  swipeable={true}
-                  showStatus={false}
-                  onClickItem={() => setActiveImageIndex(null)}
+            {!isMobile &&
+              activeImageIndex !== null && ( // Add the check for isMobile
+                <div
+                  className="fixed top-0 left-0 -bottom-24 right-0 m-auto w-2/3 h-2/3 flex items-center justify-center bg-black bg-opacity-10 carousel-overlay"
+                  onClick={handleScreenClick} // Close carousel on click outside the image
                 >
-                  {filteredImages.map((image, index) => (
-                    <div key={index}>
-                      <img src={image} alt="Gallery Image" />
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
-            )}
+                  <Carousel
+                    ref={carouselRef}
+                    selectedItem={activeImageIndex}
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    emulateTouch={true}
+                    swipeable={true}
+                    showStatus={false}
+                    onClickItem={() => setActiveImageIndex(null)}
+                  >
+                    {filteredImages.map((image, index) => (
+                      <div key={index}>
+                        <img src={image} alt="Gallery Image" />
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              )}
           </>
         )}
 
         {!filteredProject && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredImages.map((image, index) => (
               <div
                 key={index}
                 className="relative overflow-hidden"
                 style={{ aspectRatio: "1/1", cursor: "pointer" }}
-                onClick={() => handleImageClick(index)}
+                onClick={() => !isMobile && handleImageClick(index)} // Add the check for isMobile
               >
                 <img
                   src={image}

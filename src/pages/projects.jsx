@@ -43,7 +43,7 @@ const ProjectsPage = () => {
         backgroundImage={images["Master Bedroom"].mb_side_wide}
         pageDescription="Portfolio of our projects"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-4/5">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto w-4/5">
         {projects.map((project) => (
           <Link
             key={project.id}
