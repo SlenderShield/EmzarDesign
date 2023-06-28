@@ -33,6 +33,7 @@ const Home = () => {
       description: "Study Room for your kids",
     },
   ];
+
   const backgroundColor = {
     backgroundColor: "rgba(0, 0, 0, 0.3)",
   };
@@ -57,7 +58,7 @@ const Home = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="object-fit md:object-cover h-full w-full brightness-10"
+                className="object-cover md:object-cover h-full w-full brightness-75"
               />
               <div className="absolute bottom-1/2 left-0 right-0 bg-opacity-80 p-4">
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white uppercase">
