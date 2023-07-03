@@ -32,6 +32,12 @@ import feature1 from '../assets/feature1.png';
 import logo from '../assets/logo.jpg';
 import ayesha from '../assets/ayesha.jpg';
 
+import glassware from '../assets/objects/glassware.jpg';
+import lounge from '../assets/objects/lounge.jpg'
+import sofa_showcase from '../assets/objects/sofa_showcase.jpg';
+import dinner_set from '../assets/objects/dinner_set.jpg';
+import drawer from '../assets/objects/drawer.jpg'
+
 const images = {
     'Master Bedroom': {
         mb_side_view: mbSideView,
@@ -71,6 +77,14 @@ const images = {
         one: feature1,
         logo,
         ceo: ayesha,
+    },
+    'objects': {
+        sofa_showcase,
+        glassware,
+        one_object: feature1,
+        lounge,
+        dinner_set,
+        drawer
     }
 };
 
