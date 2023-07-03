@@ -43,12 +43,12 @@ const ProjectsPage = () => {
         backgroundImage={images["Master Bedroom"].mb_side_wide}
         pageDescription="Portfolio of our projects"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto w-4/5">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto w-full lg:w-11/12">
         {projects.map((project) => (
           <Link
             key={project.id}
             to={`/projects/${project.id}`} // Include project ID in the URL
-            className="block rounded-lg overflow-hidden shadow-md m-4 bg-slate-600 hover:bg-slate-500 transition duration-300 ease-in-out"
+            className="block rounded-lg overflow-hidden shadow-md m-4 bg-primary_color hover:bg-cyan-700 transition duration-300 ease-in-out"
           >
             <img
               src={project.image}
@@ -56,8 +56,8 @@ const ProjectsPage = () => {
               className="w-full h-64 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2 text-white">
-                <span className="border-b-2 border-slate-400 py-1">
+              <h2 className="text-xl font-bold mb-2 text-sec_bg_color">
+                <span className="border-b-2 border-secondary_color py-1">
                   {project.title}{" "}
                 </span>
               </h2>

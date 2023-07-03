@@ -29,7 +29,7 @@ const ScrollToTop = () => {
       } transition-opacity duration-300`}
     >
       <button
-        className="flex items-center justify-center w-12 h-12 bg-gray-900 text-white rounded-full outline-none border-white"
+        className="flex items-center justify-center w-12 h-12 bg-secondary_color text-white rounded-full outline-none border-white"
         onClick={scrollToTop}
       >
         <FaArrowUp />

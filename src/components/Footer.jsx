@@ -5,7 +5,7 @@ import { AiOutlineMail, AiTwotonePhone } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="bg-black p-5 text-white text-center">
+    <footer className="p-5 text-center bg-background_color">
       <div className="container mx-auto flex flex-wrap sm:justify-evenly flex-col sm:flex-row">
         <div className="flex flex-col">
           <h3 className="text-lg font-bold mb-2 sm:mb-4 ">
@@ -13,29 +13,19 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <Link to="/" className="text-white">
-                Home
-              </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/projects" className="text-white">
-                Projects
-              </Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/gallery" className="text-white">
-                Gallery
-              </Link>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li>
-              <Link to="/about-us" className="text-white">
-                About Us
-              </Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/contact-us" className="text-white">
-                Contact Us
-              </Link>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -49,10 +39,9 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="https://www.instagram.com/your-instagram"
+                href="https://www.instagram.com/emzardesigns/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white"
               >
                 <FaInstagram className="mr-2 inline" />
                 Instagram
@@ -60,10 +49,9 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/your-facebook"
+                href="https://www.facebook.com/Emzardesigns"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white"
               >
                 <FaFacebook className="mr-2 inline" />
                 Facebook
@@ -79,14 +67,15 @@ const Footer = () => {
             </span>
           </h3>
           <address>
-            <p>123 Main Street</p>
-            <p>City, State, Country</p>
+            <p>250 Dwarkanagar, Bagalur cross,</p>
+            <p>IAF Post Yelahanka Bengaluru</p>
+            <p>Karnataka 560063 India</p>
           </address>
-          <a href="tel:6362037006" className="text-white">
+          <a href="tel:6362037006">
             <AiTwotonePhone className="inline-block mb-1 mr-1" />
             6362037006
           </a>
-          <a href="mailto:contact@example.com" className="text-white mr-2">
+          <a href="mailto:contact@example.com" className=" mr-2">
             <AiOutlineMail className="inline-block mr-1" />
             contact@example.com
           </a>

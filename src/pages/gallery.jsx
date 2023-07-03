@@ -126,7 +126,7 @@ const GalleryPage = () => {
           <select
             value={selectedProject}
             onChange={(e) => handleProjectChange(e.target.value)}
-            className="px-2 py-1 border rounded-md"
+            className="px-2 py-1 border rounded-md bg-background_color"
           >
             {projectOptions.map((option) => (
               <option key={option.id} value={option.id}>
@@ -139,7 +139,7 @@ const GalleryPage = () => {
         {filteredProject && (
           <>
             <h2 className="text-xl font-bold mb-4">
-              <span className="border-b-2 border-blue-400 pb-1">
+              <span className="border-b-2 border-secondary_color pb-1">
                 {filteredProject.title}
                 {" :"}
               </span>

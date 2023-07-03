@@ -9,10 +9,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const navStyle =
-    "text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black active:bg-sky-500";
+    "text-background_color px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-background_color active:bg-primary_color";
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-accent_color">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -23,7 +23,7 @@ const Navbar = () => {
                 src={images["features"].logo}
                 alt="Logo"
               />
-              <p className="text-black text-xl font-bold px-4 font-serif">
+              <p className="text-background_color text-xl font-bold px-4 font-serif">
                 Emzar Designs
               </p>
             </NavLink>
@@ -34,32 +34,32 @@ const Navbar = () => {
             <div className="ml-4 flex items-center md:ml-6">
               <NavLink
                 to="/"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black active"
+                className="text-background_color font-medium px-3 py-2 rounded-md  transition duration-300 ease-in-out hover:bg-primary_color hover:text-white active"
                 exact="true"
               >
                 Home
               </NavLink>
               <NavLink
                 to="/projects"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color px-3 py-2 rounded-md  font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
               >
                 Projects
               </NavLink>
               <NavLink
                 to="/gallery"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color px-3 py-2 rounded-md  font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
               >
                 Gallery
               </NavLink>
               <NavLink
                 to="/about-us"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color px-3 py-2 rounded-md font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
               >
                 About Us
               </NavLink>
               <NavLink
                 to="/contact-us"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color px-3 py-2 rounded-md  font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
               >
                 Contact Us
               </NavLink>
@@ -71,7 +71,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={toggleMenu}
-              className="text-gray-400 hover:text-black focus:outline-none focus:text-black"
+              className="text-background_color hover:text-white focus:outline-none focus:text-background_color"
               aria-label="Toggle menu"
             >
               <svg
@@ -106,7 +106,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <NavLink
                 to="/"
-                className="text-black block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black"
+                className="text-background_color block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white"
                 exact
                 onClick={toggleMenu}
               >
@@ -114,28 +114,28 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/projects"
-                className="text-black block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black"
+                className="text-background_color block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white"
                 onClick={toggleMenu}
               >
                 Projects
               </NavLink>
               <NavLink
                 to="/gallery"
-                className="text-black block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
                 onClick={toggleMenu}
               >
                 Gallery
               </NavLink>
               <NavLink
                 to="/about-us"
-                className="text-black block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
                 onClick={toggleMenu}
               >
                 About Us
               </NavLink>
               <NavLink
                 to="/contact-us"
-                className="text-black block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-sky-500 hover:text-black "
+                className="text-background_color block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out hover:bg-primary_color hover:text-white "
                 onClick={toggleMenu}
               >
                 Contact Us

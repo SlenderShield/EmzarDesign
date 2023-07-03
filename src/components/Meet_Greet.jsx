@@ -13,7 +13,7 @@ const ContactButton = ({ link, description, height }) => {
   return (
     <div style={buttonStyle}>
       <button
-        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow"
+        className="bg-accent_color hover:bg-primary_color text-white px-4 py-2 rounded-full shadow border-none"
         onClick={handleRedirect}
         formTarget="_blank"
       >

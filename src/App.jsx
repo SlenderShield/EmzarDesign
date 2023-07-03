@@ -19,10 +19,10 @@ function App() {
       <Info />
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact={"true".toString()} path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route
-          exact
+          exact={"true".toString()}
           path="/projects/:projectId"
           element={<ProjectDetailsPage />}
         />
