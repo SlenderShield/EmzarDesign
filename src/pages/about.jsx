@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "../components/Head";
 import images from "../images";
+import { Carousel } from "react-responsive-carousel";
 
 const AboutUsPage = () => {
   return (
@@ -18,7 +19,7 @@ const AboutUsPage = () => {
               Company Details :
             </span>
           </h2>
-          <p className="text-white text-justify mb-3">
+          <p className=" text-justify mb-3">
             With expertise in both residential and commercial projects, we are
             dedicated to delivering inspired designs that go above and beyond
             our clients' expectations. Our team of talented designers is
@@ -26,7 +27,7 @@ const AboutUsPage = () => {
             requirements, ensuring that every detail is carefully considered and
             incorporated into the design.
           </p>
-          <p className="text-white text-justify mb-3">
+          <p className=" text-justify mb-3">
             At Emzar Designs, we believe that a well-designed space has the
             power to transform lives. Whether it's your dream home or a
             professional workspace, we strive to create interiors that are not
@@ -34,7 +35,7 @@ const AboutUsPage = () => {
             meticulous attention to detail and use of premium materials ensure
             that each project is of the highest quality.
           </p>
-          <p className="text-white text-justify mb-3">
+          <p className=" text-justify mb-3">
             With our focus on simplicity, we aim to make the entire design
             process smooth and enjoyable for our clients. From the initial
             concept to the final execution, we work closely with you, providing
@@ -57,6 +58,49 @@ const AboutUsPage = () => {
               />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
+        <h2 className="text-3xl font-bold mb-5">
+          <span className="border-b-2 border-secondary_color pb-1">
+            User Reviews:
+          </span>
+        </h2>
+        <div className="bg-white rounded-lg p-4 shadow-md w-full md:w-5/6 xl:w-3/5">
+          <Carousel
+            showArrows={false}
+            showThumbs={false}
+            showStatus={false}
+            infiniteLoop={true}
+            showIndicators={false}
+            autoPlay={true}
+            interval={5000}
+          >
+            <div>
+              <p className="text-center mb-3">
+                "Emzar Designs did an exceptional job in transforming my living
+                space. The attention to detail and the use of premium materials
+                truly exceeded my expectations."
+              </p>
+              <p className="text-right font-bold">- John Doe</p>
+            </div>
+            <div>
+              <p className="text-center mb-3">
+                "I couldn't be happier with the results. The design team at
+                Emzar Designs is highly skilled and professional. They listened
+                to my requirements and delivered a stunning interior."
+              </p>
+              <p className="text-right font-bold">- Jane Smith</p>
+            </div>
+            <div>
+              <p className="text-center mb-3">
+                "The level of craftsmanship and creativity displayed by Emzar
+                Designs is outstanding. They transformed my office space into a
+                modern and functional environment."
+              </p>
+              <p className="text-right font-bold">- Michael Johnson</p>
+            </div>
+          </Carousel>
         </div>
       </div>
     </div>
