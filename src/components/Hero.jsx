@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import images from "../images";
+import { Carousel } from "react-responsive-carousel";
 
 const HeroSection = () => {
   return (
@@ -26,11 +26,44 @@ const HeroSection = () => {
           </div>
           <div className="lg:w-1/4 w-1/2 m-10 lg:mt-0">
             <div className="border-4 rounded-xl overflow-hidden h-25">
-              <img
-                src={images["features"].one}
-                alt="Hero Image"
-                className="object-cover w-full h-full"
-              />
+              <Carousel
+                showArrows={false}
+                showThumbs={false}
+                showStatus={false}
+                infiniteLoop={true}
+                autoPlay={true}
+                showIndicators={false}
+                interval={3000}
+              >
+                <div className="carousel-image-container">
+                  <img
+                    src={images["objects"].one_object}
+                    alt="Hero Image 1"
+                    className="carousel-image"
+                  />
+                </div>
+                <div className="carousel-image-container">
+                  <img
+                    src={images["objects"].dinner_set}
+                    alt="Hero Image 2"
+                    className="carousel-image"
+                  />
+                </div>
+                <div className="carousel-image-container">
+                  <img
+                    src={images["objects"].lounge}
+                    alt="Hero Image 3"
+                    className="carousel-image"
+                  />
+                </div>
+                <div className="carousel-image-container">
+                  <img
+                    src={images["objects"].drawer}
+                    alt="Hero Image 4"
+                    className="carousel-image"
+                  />
+                </div>
+              </Carousel>
             </div>
           </div>
         </div>
