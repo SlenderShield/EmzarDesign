@@ -57,9 +57,7 @@ const ProjectsPage = () => {
             />
             <div className="p-4">
               <h2 className="text-xl font-bold mb-2 text-sec_bg_color">
-                <span className="border-b-2 border-secondary_color py-1">
-                  {project.title}{" "}
-                </span>
+                <span className="py-1 uppercase">{project.title} </span>
               </h2>
               <p className="text-slate-200">{project.description}</p>
             </div>
