@@ -18,6 +18,16 @@ const NavigationMenu = () => {
             </p>
           </div>
         </Link>
+        <Link to="/gallery" className="card-link" onClick={handleLinkClick}>
+          <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
+            <h2 className="card-title text-xl font-semibold mb-2 text-white">
+              Gallery
+            </h2>
+            <p className="card-description text-slate-200">
+              Browse our image gallery
+            </p>
+          </div>
+        </Link>
 
         <Link to="/about-us" className="card-link" onClick={handleLinkClick}>
           <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
@@ -30,16 +40,6 @@ const NavigationMenu = () => {
           </div>
         </Link>
 
-        <Link to="/gallery" className="card-link" onClick={handleLinkClick}>
-          <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
-            <h2 className="card-title text-xl font-semibold mb-2 text-white">
-              Gallery
-            </h2>
-            <p className="card-description text-slate-200">
-              Browse our image gallery
-            </p>
-          </div>
-        </Link>
         <Link to="/contact-us" className="card-link" onClick={handleLinkClick}>
           <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
             <h2 className="card-title text-xl font-semibold mb-2 text-white">
