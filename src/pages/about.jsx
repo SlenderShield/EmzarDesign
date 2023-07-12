@@ -66,7 +66,7 @@ const AboutUsPage = () => {
             User Reviews:
           </span>
         </h2>
-        <div className="bg-white rounded-lg p-4 shadow-md w-full md:w-5/6 xl:w-3/5">
+        <div className="bg-white rounded-lg p-4 shadow-md w-full ">
           <Carousel
             showArrows={false}
             showThumbs={false}
@@ -75,6 +75,7 @@ const AboutUsPage = () => {
             showIndicators={false}
             autoPlay={true}
             interval={5000}
+            className="flex justify-center w-full md:w-5/6 xl:w-4/5 mx-auto"
           >
             <div>
               <p className="text-center mb-3">
