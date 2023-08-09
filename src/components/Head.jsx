@@ -18,7 +18,7 @@ const Head = ({ pageTitle, backgroundImage, pageDescription }) => {
         className="container mx-auto h-full rounded-lg"
         style={backgroundColor}
       >
-        <div className="p-4 md:p-8 lg:p-12 text-sec_bg_color ml-10">
+        <div className="p-4 md:p-8 lg:p-12 text-white ml-10">
           <p className="text-sm text-bold mb-1 uppercase">{pageDescription}</p>
           <h1 className="text-xl md:text-3xl lg:text-5xl font-bold uppercase">
             {pageTitle}

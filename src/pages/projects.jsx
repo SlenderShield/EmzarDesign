@@ -34,8 +34,10 @@ const projects = [
   },
   // Add more projects as needed
 ];
-
 const ProjectsPage = () => {
+  const commonLinkClasses =
+    "block rounded-lg overflow-hidden shadow-md m-4 bg-primary_color hover:bg-cyan-700 transition duration-300 ease-in-out";
+
   return (
     <div className="container mx-auto px-4 py-8">
       <Head
@@ -44,22 +46,22 @@ const ProjectsPage = () => {
         pageDescription="Portfolio of our projects"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto w-full lg:w-11/12">
-        {projects.map((project) => (
+        {projects.map(({ id, title, description, image }) => (
           <Link
-            key={project.id}
-            to={`/projects/${project.id}`} // Include project ID in the URL
-            className="block rounded-lg overflow-hidden shadow-md m-4 bg-primary_color hover:bg-cyan-700 transition duration-300 ease-in-out"
+            key={id}
+            to={`/projects/${id}`} // Include project ID in the URL
+            className={commonLinkClasses}
           >
             <img
-              src={project.image}
-              alt={project.title}
+              src={image}
+              alt={title}
               className="w-full h-64 object-cover"
             />
             <div className="p-4">
               <h2 className="text-xl font-bold mb-2 text-sec_bg_color">
-                <span className="py-1 uppercase">{project.title} </span>
+                <span className="py-1 uppercase">{title} </span>
               </h2>
-              <p className="text-slate-200">{project.description}</p>
+              <p className="text-slate-200">{description}</p>
             </div>
           </Link>
         ))}

@@ -14,11 +14,11 @@ const ContactForm = () => {
       ) : (
         <form onSubmit={handleSubmit}>
           <div className="mb-4 ">
-            <label className="block text-secondary_color mb-2" htmlFor="name">
+            <label className="block text-white mb-2" htmlFor="name">
               Your Name:
             </label>
             <input
-              className="bg-background_color border border-gray-300 rounded-md px-3 py-2 w-full placeholder-primary_color"
+              className="border border-gray-300 rounded-md px-3 py-2 w-full"
               type="text"
               id="name"
               name="name"
@@ -28,11 +28,11 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-secondary_color mb-2" htmlFor="email">
+            <label className="block text-white mb-2" htmlFor="email">
               Email Address:
             </label>
             <input
-              className="bg-background_color border border-gray-300 rounded-md px-3 py-2 w-full placeholder-primary_color"
+              className="border border-gray-300 rounded-md px-3 py-2 w-full "
               type="email"
               id="email"
               name="email"
@@ -42,14 +42,11 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-4">
-            <label
-              className="block text-secondary_color mb-2"
-              htmlFor="message"
-            >
+            <label className="block text-white mb-2" htmlFor="message">
               Message:
             </label>
             <textarea
-              className="bg-background_color border border-gray-300 rounded-md px-3 py-2 w-full h-32 placeholder-primary_color"
+              className="border border-gray-300 rounded-md px-3 py-2 w-full h-32 "
               id="message"
               name="message"
               placeholder="Your message here..."
@@ -58,7 +55,7 @@ const ContactForm = () => {
           </div>
 
           <button
-            className="bg-primary_color hover:bg-white hover:text-primary_color text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out flex items-center"
+            className="bg-blue-500 hover:bg-white hover:text-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out flex items-center"
             type="submit"
             disabled={state.submitting}
           >

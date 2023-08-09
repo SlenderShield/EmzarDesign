@@ -21,7 +21,8 @@ const projects = [
     id: 2,
     title: "Project 2",
     tagLine: "Elevate Your Restful Haven with Timeless Designs",
-    description: "This is the description of Project 2",
+    description:
+      "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
       images["SNN_Clermont_Apartment"].kitchen_side,
       images["SNN_Clermont_Apartment"].kitchen_side_two,
@@ -32,7 +33,8 @@ const projects = [
     id: 3,
     title: "Project 3",
     tagLine: "Elevate Your Restful Haven with Timeless Designs",
-    description: "This is the description of Project 3",
+    description:
+      "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
       images["SNN_Clermont_Apartment"].kitchen_side,
       images["SNN_Clermont_Apartment"].kitchen_side_two,
@@ -43,7 +45,8 @@ const projects = [
     id: 4,
     title: "Project 4",
     tagLine: "Elevate Your Restful Haven with Timeless Designs",
-    description: "This is the description of Project 4",
+    description:
+      "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
       images["SNN_Clermont_Apartment"].kitchen_side,
       images["SNN_Clermont_Apartment"].kitchen_side_two,

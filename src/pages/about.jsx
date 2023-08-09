@@ -72,34 +72,34 @@ const AboutUsPage = () => {
             showThumbs={false}
             showStatus={false}
             infiniteLoop={true}
-            showIndicators={false}
+            showIndicators={true}
             autoPlay={true}
             interval={5000}
             className="flex justify-center w-full md:w-5/6 xl:w-4/5 mx-auto"
           >
             <div>
               <p className="text-center mb-3">
-                "Emzar Designs did an exceptional job in transforming my living
-                space. The attention to detail and the use of premium materials
-                truly exceeded my expectations."
+                "I am very happy with their work and service provided. Really
+                good designers, great work ethics and are professional. ."
               </p>
-              <p className="text-right font-bold">- John Doe</p>
+              <p className="text-right font-bold">- Abhishek K</p>
             </div>
             <div>
               <p className="text-center mb-3">
-                "I couldn't be happier with the results. The design team at
-                Emzar Designs is highly skilled and professional. They listened
-                to my requirements and delivered a stunning interior."
+                "Brilliant designing ability, understanding pulse of customer &
+                seamless execution.Would definitely recommend to all in need of
+                a trustworthy interior design team."
               </p>
-              <p className="text-right font-bold">- Jane Smith</p>
+              <p className="text-right font-bold">- Sree N</p>
             </div>
             <div>
               <p className="text-center mb-3">
-                "The level of craftsmanship and creativity displayed by Emzar
-                Designs is outstanding. They transformed my office space into a
-                modern and functional environment."
+                "They are best in service for your home interiors. They have
+                great innovative ideas and customization as per your needs. Must
+                go for it. one of the best interior designing company in
+                Bangalore ,with Hassel free service."
               </p>
-              <p className="text-right font-bold">- Michael Johnson</p>
+              <p className="text-right font-bold">- Ankitha B</p>
             </div>
           </Carousel>
         </div>

@@ -9,7 +9,7 @@ const NavigationMenu = () => {
     <div className="flex justify-center py-4">
       <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 w-3/4 max-w-screen-xl mx-auto">
         <Link to="/projects" className="card-link" onClick={handleLinkClick}>
-          <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2 aspect-auto">
+          <div className="card bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2 aspect-auto">
             <h2 className="card-title text-xl font-semibold mb-2 text-white">
               Projects
             </h2>
@@ -19,7 +19,7 @@ const NavigationMenu = () => {
           </div>
         </Link>
         <Link to="/gallery" className="card-link" onClick={handleLinkClick}>
-          <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
+          <div className="card bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
             <h2 className="card-title text-xl font-semibold mb-2 text-white">
               Gallery
             </h2>
@@ -30,7 +30,7 @@ const NavigationMenu = () => {
         </Link>
 
         <Link to="/about-us" className="card-link" onClick={handleLinkClick}>
-          <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
+          <div className="card bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
             <h2 className="card-title text-xl font-semibold mb-2 text-white">
               About
             </h2>
@@ -41,7 +41,7 @@ const NavigationMenu = () => {
         </Link>
 
         <Link to="/contact-us" className="card-link" onClick={handleLinkClick}>
-          <div className="card bg-gradient-to-r from-accent_color to-primary_color rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
+          <div className="card bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2">
             <h2 className="card-title text-xl font-semibold mb-2 text-white">
               Contact Us
             </h2>
