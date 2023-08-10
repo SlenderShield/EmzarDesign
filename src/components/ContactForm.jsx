@@ -18,7 +18,7 @@ const ContactForm = () => {
               Your Name:
             </label>
             <input
-              className="border border-gray-300 rounded-md px-3 py-2 w-full"
+              className="border bg-white border-gray-300 rounded-md px-3 py-2 w-full placeholder-slate-600"
               type="text"
               id="name"
               name="name"
@@ -32,7 +32,7 @@ const ContactForm = () => {
               Email Address:
             </label>
             <input
-              className="border border-gray-300 rounded-md px-3 py-2 w-full "
+              className="border placeholder-slate-600 bg-white border-gray-300 rounded-md px-3 py-2 w-full "
               type="email"
               id="email"
               name="email"
@@ -46,7 +46,7 @@ const ContactForm = () => {
               Message:
             </label>
             <textarea
-              className="border border-gray-300 rounded-md px-3 py-2 w-full h-32 "
+              className="border placeholder-slate-600 border-gray-300 rounded-md px-3 py-2 w-full h-32 bg-white"
               id="message"
               name="message"
               placeholder="Your message here..."

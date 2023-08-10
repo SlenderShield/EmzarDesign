@@ -28,7 +28,7 @@ const ContactUsPage = () => {
 
           <div className="w-full lg:w-1/2 px-4 mb-8">
             <h2 className="text-2xl font-bold mb-4 text-center md:text-left">
-              <span className="font-bold border-b-2 border-secondary_color pb-1">
+              <span className="font-bold border-b-2 border-blue-400 pb-1">
                 Location :
               </span>
             </h2>
