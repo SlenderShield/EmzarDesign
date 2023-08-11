@@ -24,7 +24,7 @@ const HeroSection = () => {
               that truly reflect our clients' unique vision and style.
             </p>
           </div>
-          <div className="lg:w-1/4 w-1/2 m-10 lg:mt-0">
+          <div className="lg:w-1/4 w-3/4 m-10 lg:mt-0">
             <div className="border-4 rounded-xl overflow-hidden h-25">
               <Carousel
                 showArrows={false}

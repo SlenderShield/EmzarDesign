@@ -87,10 +87,22 @@ const Footer = () => {
             <AiTwotonePhone className="inline-block mb-1 mr-1" />
             6362037006
           </a>
-          <a href="mailto:contact@example.com" className="text-white mr-2">
+          <a href="mailto:Emzardesign@gmail.com" className="text-white mr-2">
             <AiOutlineMail className="inline-block mr-1" />
-            contact@example.com
+            Emzardesign@gmail.com
           </a>
+        </div>
+        <div className="flex flex-col">
+          <h3 className="text-lg font-bold mb-2 sm:mb-4 mt-4 sm:mt-0">
+            <span className="border-b-2 border-blue-400 pb-1">
+              Factory Info
+            </span>
+          </h3>
+          <address>
+            <p>250 Dwarkanagar, Bagalur cross,</p>
+            <p>IAF Post Yelahanka Bengaluru</p>
+            <p>Karnataka 560063 India</p>
+          </address>
         </div>
       </div>
 

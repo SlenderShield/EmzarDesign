@@ -8,7 +8,7 @@ const Info = () => {
       {/* Mail Link */}
       <div className="flex flex-col sm:flex-row ">
         <a
-          href="mailto:contact@example.com"
+          href="mailto:Emzardesign@gmail.com"
           className="text-black mb-2 sm:mr-2"
         >
           <AiOutlineMail className="inline-block mr-1 " />

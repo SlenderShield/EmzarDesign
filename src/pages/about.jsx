@@ -62,6 +62,21 @@ const AboutUsPage = () => {
       </div>
       <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
         <h2 className="text-3xl font-bold mb-5">
+          <span className="border-b-2 border-blue-400 pb-1">
+            Factory Details :
+          </span>
+        </h2>
+        <p className=" text-justify mb-3">
+          With expertise in both residential and commercial projects, we are
+          dedicated to delivering inspired designs that go above and beyond our
+          clients' expectations. Our team of talented designers is committed to
+          understanding your individual preferences and requirements, ensuring
+          that every detail is carefully considered and incorporated into the
+          design.
+        </p>
+      </div>
+      <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
+        <h2 className="text-3xl font-bold mb-5">
           <span className="border-b-2 border-secondary_color pb-1">
             User Reviews:
           </span>
