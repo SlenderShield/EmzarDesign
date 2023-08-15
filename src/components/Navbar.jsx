@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <NavLink to="/" exact="true" className="flex items-center">
               <img
-                className="h-10 w-10 rounded-lg"
+                className="h-10 w-10 rounded-lg "
                 src={images["features"].logo}
                 alt="Logo"
               />

@@ -29,7 +29,7 @@ import wideSofa from '../assets/Study_Gaming_Room/wide_sofa.jpg';
 import wideView from '../assets/Study_Gaming_Room/wide_view.jpg';
 
 import feature1 from '../assets/feature1.png';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/favicons/favicon.jpg';
 import ayesha from '../assets/ayesha.jpg';
 
 import glassware from '../assets/objects/glassware.jpg';
