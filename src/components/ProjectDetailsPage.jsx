@@ -8,7 +8,8 @@ const projects = [
   {
     id: 1,
     title: "Master Bedroom Concepts",
-    tagLine: "Elevate Your Restful Haven with Timeless Designs",
+    tagLine:
+      "The aim is to create a sophisticated and upscale ambiance using high-quality materials, plush bedding, and refined furniture pieces.",
     description:
       "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
@@ -19,20 +20,22 @@ const projects = [
   },
   {
     id: 2,
-    title: "Project 2",
-    tagLine: "Elevate Your Restful Haven with Timeless Designs",
+    title: "Srikara Enclave Design",
+    tagLine:
+      "The enclave is designed with careful consideration of the placement and orientation of homes, green spaces, and common areas.",
     description:
       "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
-      images["SNN_Clermont_Apartment"].kitchen_side,
-      images["SNN_Clermont_Apartment"].kitchen_side_two,
-      images["SNN_Clermont_Apartment"].tv_room_front,
+      images["Srikara_Enclave"].TV_room,
+      images["Srikara_Enclave"].Bedroom_sideview,
+      images["Srikara_Enclave"].hall,
     ],
   },
   {
     id: 3,
-    title: "Project 3",
-    tagLine: "Elevate Your Restful Haven with Timeless Designs",
+    title: "SNN Clermont Apartment",
+    tagLine:
+      "The apartment is designed with careful consideration of the placement and orientation of homes, green spaces, and common areas. ",
     description:
       "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
@@ -43,14 +46,15 @@ const projects = [
   },
   {
     id: 4,
-    title: "Project 4",
-    tagLine: "Elevate Your Restful Haven with Timeless Designs",
+    title: "Study Gaming Room",
+    tagLine:
+      "The study room is a space that should reflect a person's character and individuality. ",
     description:
       "At Emzar Designs, we understand the importance of creating a master bedroom that truly reflects your personal style and offers an oasis of tranquility. Our expert designers specialize in crafting exceptional concepts that go beyond the ordinary, bringing together elegance, comfort, and functionality. From luxurious retreats inspired by classic aesthetics to modern sanctuaries with sleek lines and innovative features, we transform your vision into reality. Immerse yourself in a world of serene living, where every detail is thoughtfully curated to enhance your relaxation and rejuvenation. With our master bedroom concepts, experience the art of design, tailored to your unique preferences, and indulge in the beauty of a space designed just for you.",
     image_arr: [
-      images["SNN_Clermont_Apartment"].kitchen_side,
-      images["SNN_Clermont_Apartment"].kitchen_side_two,
-      images["SNN_Clermont_Apartment"].tv_room_front,
+      images["Study_Gaming_Room"].gaming_view,
+      images["Study_Gaming_Room"].wide_sofa,
+      images["Study_Gaming_Room"].tv_station,
     ],
   },
 ];

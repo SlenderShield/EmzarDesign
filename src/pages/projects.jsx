@@ -29,7 +29,7 @@ const projects = [
     id: 4,
     title: "Study Gaming Room",
     description:
-      " The study room is a space that should reflect a person’s character and individuality. ",
+      " The study room is a space that should reflect a person's character and individuality. ",
     image: images["Study_Gaming_Room"].tv_station,
   },
   // Add more projects as needed
@@ -52,11 +52,7 @@ const ProjectsPage = () => {
             to={`/projects/${id}`} // Include project ID in the URL
             className={commonLinkClasses}
           >
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-64 object-cover"
-            />
+            <img src={image} alt={title} className="w-full h-64 object-cover" />
             <div className="p-4">
               <h2 className="text-xl font-bold mb-2 text-sec_bg_color">
                 <span className="py-1 uppercase">{title} </span>
