@@ -98,11 +98,16 @@ const Footer = () => {
               Factory Info
             </span>
           </h3>
+          <h2 className="text-lg font-bold ">Desire Interiors</h2>
           <address>
-            <p>250 Dwarkanagar, Bagalur cross,</p>
-            <p>IAF Post Yelahanka Bengaluru</p>
-            <p>Karnataka 560063 India</p>
+            <p>#8 1st cross veeraan palya,</p>
+            <p>Arabic Collage post, Hebbal, </p>
+            <p>Bengaluru, Karnataka 560045 India</p>
           </address>
+          <a href="tel:6362037006" className="text-white">
+            <AiTwotonePhone className="inline-block mb-1 mr-1" />
+            9611778601
+          </a>
         </div>
       </div>
 
