@@ -2,6 +2,7 @@ import React from "react";
 import Head from "../components/Head";
 import images from "../images";
 import { Carousel } from "react-responsive-carousel";
+import { AiTwotonePhone } from "react-icons/ai";
 
 const AboutUsPage = () => {
   return (
@@ -66,13 +67,27 @@ const AboutUsPage = () => {
             Factory Details :
           </span>
         </h2>
-        <p className=" text-justify mb-3">
-          With expertise in both residential and commercial projects, we are
-          dedicated to delivering inspired designs that go above and beyond our
-          clients' expectations. Our team of talented designers is committed to
-          understanding your individual preferences and requirements, ensuring
-          that every detail is carefully considered and incorporated into the
-          design.
+
+        <p className="text-justify mb-3">
+          In the heart of our interior design company's operations lies our
+          bustling factory, a place where creativity and craftsmanship converge.
+          This dynamic space serves as the birthplace of our design concepts,
+          where imagination transforms into reality. Our skilled artisans and
+          craftsmen form the backbone of our factory, meticulously crafting
+          custom furniture that reflects the essence of our clients' visions.
+        </p>
+        <p className="text-justify mb-3">
+          Ultimately, our factory embodies the dedication and passion that
+          define our interior design company. It's where the intangible
+          transforms into the tangible, where dreams become fixtures, and where
+          every detail is woven into the fabric of exceptional design.
+        </p>
+        <p className="">
+          Siddiq Ahmed:{" "}
+          <a href="tel:6362037006">
+            <AiTwotonePhone className="inline-block mb-1 mr-1" />
+            9108151481
+          </a>
         </p>
       </div>
       <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
