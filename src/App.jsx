@@ -31,12 +31,12 @@ function App() {
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
       <CalendlyButton
-        link={"https://calendly.com/slendershield/30min"}
+        link={"https://calendly.com/emzardesigns/check-in"}
         description={"Schedule a Meeting"}
         height={96}
       />
       <CalendlyButton
-        link={"https://wa.me/+919844083281"}
+        link={"https://wa.me/+916362037006"}
         description={"Whatsapp"}
         height={150}
       />

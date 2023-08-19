@@ -50,8 +50,8 @@ const ContactUsPage = () => {
       </div>
       <CallToAction
         title={"Need a quote!"}
-        description={"Fill the form"}
-        link={"https://www.google.com"}
+        description={"Contact Us"}
+        link={"https://wa.me/+916362037006"}
       />
     </div>
   );
