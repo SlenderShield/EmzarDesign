@@ -14,7 +14,7 @@ const ContactForm = () => {
       ) : (
         <form onSubmit={handleSubmit}>
           <div className="mb-4 ">
-            <label className="block text-white mb-2" htmlFor="name">
+            <label className="block border-secondary_color mb-2" htmlFor="name">
               Your Name:
             </label>
             <input
@@ -28,7 +28,10 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-white mb-2" htmlFor="email">
+            <label
+              className="block border-secondary_color mb-2"
+              htmlFor="email"
+            >
               Email Address:
             </label>
             <input
@@ -42,7 +45,10 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-white mb-2" htmlFor="message">
+            <label
+              className="block border-secondary_color mb-2"
+              htmlFor="message"
+            >
               Message:
             </label>
             <textarea
