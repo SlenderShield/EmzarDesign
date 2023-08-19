@@ -77,7 +77,7 @@ const Home = () => {
       <CallToAction
         title={"Ready to get started?"}
         description={"Get Free Consultancy"}
-        link={"contact-us"}
+        link={"https://wa.me/+916362037006"}
       />
     </section>
   );
