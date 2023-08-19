@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import { AiOutlineMail, AiTwotonePhone } from "react-icons/ai";
+import { BiMailSend } from "react-icons/bi";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -84,11 +85,11 @@ const Footer = () => {
             <p>Karnataka 560063 India</p>
           </address>
           <a href="tel:6362037006" className="text-white">
-            <AiTwotonePhone className="inline-block mb-1 mr-1" />
+            <BsFillTelephoneFill className="inline-block mb-1 mr-1" />
             6362037006
           </a>
           <a href="mailto:Emzardesign@gmail.com" className="text-white mr-2">
-            <AiOutlineMail className="inline-block mr-1" />
+            <BiMailSend className="inline-block mr-1" />
             Emzardesign@gmail.com
           </a>
         </div>
@@ -105,7 +106,7 @@ const Footer = () => {
             <p>Bengaluru, Karnataka 560045 India</p>
           </address>
           <a href="tel:6362037006" className="text-white">
-            <AiTwotonePhone className="inline-block mb-1 mr-1" />
+            <BsFillTelephoneFill className="inline-block mb-1 mr-1" />
             9611778601
           </a>
         </div>

@@ -1,22 +1,21 @@
 import React from "react";
-import { AiOutlineMail, AiTwotonePhone } from "react-icons/ai";
+import { BiMailSend } from "react-icons/bi";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Info = () => {
   return (
-    <div className="flex justify-between items-center m-4 mx-10">
+    <div className="flex justify-between items-center m-4 mx-10 text-xl">
       {/* Mail Link */}
-      <div className="flex flex-col sm:flex-row ">
+      <div className="flex flex-row ">
         <a
           href="mailto:Emzardesign@gmail.com"
-          className="text-black mb-2 sm:mr-2"
+          className="text-black pb-1 sm:mr-2"
         >
-          <AiOutlineMail className="inline-block mr-1 " />
-          Emzardesign@gmail.com
+          <BiMailSend className="inline-block mr-1 text-2xl" />
         </a>
-        <a href="tel:6362037006" className="hidden sm:block text-black">
-          <AiTwotonePhone className="inline-block mb-1 mr-1" />
-          63620 37006
+        <a href="tel:6362037006" className="text-black text-base">
+          <BsFillTelephoneFill className="inline-block mr-1" />
         </a>
       </div>
 
