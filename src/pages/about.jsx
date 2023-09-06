@@ -84,7 +84,7 @@ const AboutUsPage = () => {
         </p>
         <p className="">
           Siddiq Ahmed:{" "}
-          <a href="tel:6362037006">
+          <a href="tel:9108151481">
             <BsFillTelephoneFill className="inline-block mb-1 mr-1" />
             9108151481
           </a>
