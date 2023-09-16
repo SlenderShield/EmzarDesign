@@ -7,7 +7,7 @@ import InfoGraph from "../components/InfoGraph";
 
 const AboutUsPage = () => {
   const infographicData = {
-    heading: "The Process.",
+    heading: "The Process",
     icons: [
       {
         icon: (

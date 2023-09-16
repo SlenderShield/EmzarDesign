@@ -4,8 +4,8 @@ const InfoGraph = ({ heading, icons }) => {
   return (
     <section className="py-10">
       <div className="container mx-auto w-4/5">
-        <h2 className="text-3xl font-semibold mb-8 text-center py-7">
-          <span className="border-b-2 border-blue-400 pb-1">{heading}</span>
+        <h2 className="text-3xl font-semibold mb-8 text-center py-7 uppercase">
+          {heading}
         </h2>
         <div className="flex flex-wrap lg:flex-nowrap justify-center items-end">
           {icons.map((icon, index) => (

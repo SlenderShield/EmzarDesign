@@ -36,7 +36,7 @@ const Home = () => {
   ];
 
   const infographicData = {
-    heading: "WHY? Emzar Designs.",
+    heading: "Why Emzar Designs?",
     icons: [
       {
         icon: (
