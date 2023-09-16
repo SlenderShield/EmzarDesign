@@ -2,17 +2,16 @@ import React from "react";
 
 const InfoGraph = ({ heading, icons }) => {
   return (
-    <section className="bg-gray-100 py-12">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold mb-8 text-center">{heading}</h2>
-        <div className="flex flex-wrap justify-center -mx-4">
+    <section className="py-10">
+      <div className="container mx-auto w-4/5">
+        <h2 className="text-3xl font-semibold mb-8 text-center py-7">
+          <span className="border-b-2 border-blue-400 pb-1">{heading}</span>
+        </h2>
+        <div className="flex flex-wrap lg:flex-nowrap justify-center items-end">
           {icons.map((icon, index) => (
-            <div
-              key={index}
-              className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 px-4 mb-8"
-            >
-              <div className="text-center">
-                <i className={`text-5xl text-blue-500 ${icon.icon}`}></i>
+            <div key={index} className="sm:w-1/2 md:w-1/2 w-full px-2 mb-8">
+              <div className=" flex justify-center items-center flex-col">
+                {icon.icon}
                 <p className="mt-2 text-lg font-medium">{icon.label}</p>
               </div>
             </div>

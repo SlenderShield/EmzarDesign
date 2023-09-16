@@ -3,8 +3,58 @@ import Head from "../components/Head";
 import images from "../images";
 import { Carousel } from "react-responsive-carousel";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import InfoGraph from "../components/InfoGraph";
 
 const AboutUsPage = () => {
+  const infographicData = {
+    heading: "The Process.",
+    icons: [
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/clouds/100/meeting.png"
+            alt="meeting"
+          />
+        ),
+        label: "Meet Our Designers",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-booking-rage-room-flaticons-flat-flat-icons.png"
+            alt="external-booking-rage-room-flaticons-flat-flat-icons"
+          />
+        ),
+        label: "Book Emzar Designs",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/color/48/create-order.png"
+            alt="create-order"
+          />
+        ),
+        label: "Place the request",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/clouds/100/work.png"
+            alt="work"
+          />
+        ),
+        label: "Work begins.",
+      },
+    ],
+  };
   return (
     <div className="container mx-auto px-4 py-8">
       <Head
@@ -90,6 +140,7 @@ const AboutUsPage = () => {
           </a>
         </p>
       </div>
+      <InfoGraph {...infographicData} />
       <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
         <h2 className="text-3xl font-bold mb-5">
           <span className="border-b-2 border-secondary_color pb-1">

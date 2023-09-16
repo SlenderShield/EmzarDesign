@@ -6,7 +6,7 @@ import NavigationMenu from "../components/NavigationCard";
 import CallToAction from "../components/CallToAction";
 import images from "../images";
 import InfoGraph from "../components/InfoGraph";
-
+import { FaCalendarWeek, FaHome, FaCalendarDay } from "react-icons/fa";
 const Home = () => {
   const image_array = [
     {
@@ -36,12 +36,52 @@ const Home = () => {
   ];
 
   const infographicData = {
-    heading: "Our Expertise",
+    heading: "WHY? Emzar Designs.",
     icons: [
-      { icon: "fas fa-paint-roller", label: "Painting" },
-      { icon: "fas fa-couch", label: "Furniture" },
-      { icon: "fas fa-lightbulb", label: "Lighting" },
-      { icon: "fas fa-home", label: "Home Design" },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/plasticine/100/new-year-calendar.png"
+            alt="new-year-calendar"
+          />
+        ),
+        label: "45 Days Move In",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/clouds/100/home.png"
+            alt="home"
+          />
+        ),
+        label: "100+ Happy Customers",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-designer-creativity-flaticons-lineal-color-flat-icons.png"
+            alt="external-designer-creativity-flaticons-lineal-color-flat-icons"
+          />
+        ),
+        label: "Expert Designers",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/laces/64/warranty.png"
+            alt="warranty"
+          />
+        ),
+        label: "Up to 5-years material warranty",
+      },
     ],
   };
 
