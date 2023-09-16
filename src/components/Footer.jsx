@@ -105,9 +105,9 @@ const Footer = () => {
             <p>Arabic Collage post, Hebbal, </p>
             <p>Bengaluru, Karnataka 560045 India</p>
           </address>
-          <a href="tel:9611778601" className="text-white">
+          <a href="tel:9108151481" className="text-white">
             <BsFillTelephoneFill className="inline-block mb-1 mr-1" />
-            9611778601
+            9108151481
           </a>
         </div>
       </div>

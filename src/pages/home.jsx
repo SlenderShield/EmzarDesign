@@ -80,7 +80,7 @@ const Home = () => {
             alt="warranty"
           />
         ),
-        label: "Up to 5-years material warranty",
+        label: "Up to 10-years material warranty",
       },
     ],
   };
