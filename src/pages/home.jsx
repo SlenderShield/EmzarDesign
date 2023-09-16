@@ -5,6 +5,7 @@ import HeroSection from "../components/Hero";
 import NavigationMenu from "../components/NavigationCard";
 import CallToAction from "../components/CallToAction";
 import images from "../images";
+import InfoGraph from "../components/InfoGraph";
 
 const Home = () => {
   const image_array = [
@@ -33,6 +34,16 @@ const Home = () => {
       description: "Study Room for your kids",
     },
   ];
+
+  const infographicData = {
+    heading: "Our Expertise",
+    icons: [
+      { icon: "fas fa-paint-roller", label: "Painting" },
+      { icon: "fas fa-couch", label: "Furniture" },
+      { icon: "fas fa-lightbulb", label: "Lighting" },
+      { icon: "fas fa-home", label: "Home Design" },
+    ],
+  };
 
   const backgroundColor = {
     backgroundColor: "rgba(0, 0, 0, 0.3)",
@@ -73,6 +84,7 @@ const Home = () => {
         </Carousel>
       </div>
       <HeroSection />
+      <InfoGraph {...infographicData} />
       <NavigationMenu />
       <CallToAction
         title={"Ready to get started?"}
