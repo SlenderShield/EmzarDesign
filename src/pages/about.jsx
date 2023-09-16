@@ -111,7 +111,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
+      <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 my-10">
         <h2 className="text-3xl font-bold mb-5">
           <span className="border-b-2 border-blue-400 pb-1">
             Factory Details :

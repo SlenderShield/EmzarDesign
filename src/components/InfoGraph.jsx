@@ -2,7 +2,7 @@ import React from "react";
 
 const InfoGraph = ({ heading, icons }) => {
   return (
-    <section className="py-10">
+    <section className="py-10 bg-slate-100">
       <div className="container mx-auto w-4/5">
         <h2 className="text-3xl font-semibold mb-8 text-center py-7 uppercase">
           {heading}

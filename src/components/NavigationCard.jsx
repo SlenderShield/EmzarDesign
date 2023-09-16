@@ -6,7 +6,7 @@ const NavigationMenu = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
   return (
-    <div className="flex justify-center py-4">
+    <div className="flex justify-center py-6">
       <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 w-3/4 max-w-screen-xl mx-auto">
         <Link to="/projects" className="card-link" onClick={handleLinkClick}>
           <div className="card bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-2 aspect-auto">
