@@ -55,6 +55,31 @@ const projects = [
       images["Study_Gaming_Room"].wide_view,
     ],
   },
+  {
+    id: 5,
+    title: "Coffee Shop",
+    images: [
+      images["Coffee_Shop"].five,
+      images["Coffee_Shop"].four,
+      images["Coffee_Shop"].one,
+      images["Coffee_Shop"].three,
+      images["Coffee_Shop"].two,
+      images["Coffee_Shop"].six,
+    ],
+  },
+  {
+    id: 6,
+    title: "SNN Real Time",
+    images: [
+      images["SNN"].bedroom,
+      images["SNN"].tv_area,
+      images["SNN"].hall_way,
+      images["SNN"].kitchen,
+      images["SNN"].kitchen_main,
+      images["SNN"].kitchen_two,
+      images["SNN"].closet,
+    ],
+  },
 ];
 const GalleryPage = () => {
   const [selectedProject, setSelectedProject] = useState("all");

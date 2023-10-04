@@ -38,6 +38,21 @@ import sofa_showcase from '../assets/objects/sofa_showcase.jpg';
 import dinner_set from '../assets/objects/dinner_set.jpg';
 import drawer from '../assets/objects/drawer.jpg'
 
+import five from '../assets/coffee_shop/five.jpg'
+import four from '../assets/coffee_shop/four.jpg'
+import one from '../assets/coffee_shop/one.jpg'
+import six from '../assets/coffee_shop/six.jpg'
+import three from '../assets/coffee_shop/three.jpg'
+import two from '../assets/coffee_shop/two.jpg'
+
+import bedroom from '../assets/SNN/bedroom.jpeg'
+import closet from '../assets/SNN/closet.jpeg'
+import hall_way from '../assets/SNN/hall_way.jpeg'
+import kitchen from '../assets/SNN/kitchen.jpeg'
+import kitchen_main from '../assets/SNN/kitchen_main.jpeg'
+import tv_area from '../assets/SNN/tv_area.jpeg'
+import kitchen_two from '../assets/SNN/kitchen_two.jpeg'
+
 const images = {
     'Master Bedroom': {
         mb_side_view: mbSideView,
@@ -85,6 +100,23 @@ const images = {
         lounge,
         dinner_set,
         drawer
+    },
+    "Coffee_Shop": {
+        five,
+        four,
+        one,
+        two,
+        three,
+        six
+    },
+    "SNN": {
+        bedroom,
+        closet,
+        kitchen,
+        kitchen_main,
+        kitchen_two,
+        tv_area,
+        hall_way
     }
 };
 
