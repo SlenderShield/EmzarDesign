@@ -85,6 +85,56 @@ const Home = () => {
     ],
   };
 
+  const whatWeDo = {
+    heading: "The Designs we do for you",
+    icons: [
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/100/external-kitchen-cooking-wanicon-lineal-color-wanicon.png"
+            alt="Kitchen icon"
+          />
+        ),
+        label: "Kitchen",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/external-justicon-lineal-color-justicon/100/external-bedroom-hotel-essentials-justicon-lineal-color-justicon.png"
+            alt="bedroom icon"
+          />
+        ),
+        label: "Bedroom",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/external-rabit-jes-flat-rabit-jes/100/external-living-room-home-decoration-rabit-jes-flat-rabit-jes.png"
+            alt="living-room icon"
+          />
+        ),
+        label: "Living Room",
+      },
+      {
+        icon: (
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/plasticine/100/meeting-room.png"
+            alt="meeting room"
+          />
+        ),
+        label: "Meeting Room",
+      },
+    ],
+  };
+
   const backgroundColor = {
     backgroundColor: "rgba(0, 0, 0, 0.3)",
   };
@@ -124,8 +174,9 @@ const Home = () => {
         </Carousel>
       </div>
       <HeroSection />
-      <InfoGraph {...infographicData} />
+      <InfoGraph {...whatWeDo} />
       <NavigationMenu />
+      <InfoGraph {...infographicData} />
       <CallToAction
         title={"Ready to get started?"}
         description={"Get Free Consultancy"}
