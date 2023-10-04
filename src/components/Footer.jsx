@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="p-5 text-center bg-slate-800 text-white">
       <div className="container mx-auto flex flex-wrap sm:justify-evenly flex-col sm:flex-row">
-        <div className="flex flex-col">
+        <div className="hidden lg:flex flex-col ">
           <h3 className="text-lg font-bold mb-2 sm:mb-4 ">
             <span className="border-b-2 border-blue-400 pb-1">Quick Links</span>
           </h3>

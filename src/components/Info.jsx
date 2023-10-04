@@ -1,7 +1,7 @@
 import React from "react";
 import { BiMailSend } from "react-icons/bi";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Info = () => {
   return (
@@ -27,8 +27,11 @@ const Info = () => {
         >
           <FaFacebook />
         </a>
-        <a href="https://twitter.com" className="text-black mr-2">
-          <FaTwitter />
+        <a
+          href="https://www.youtube.com/@Emzardesigns"
+          className="text-black mr-2"
+        >
+          <FaYoutube />
         </a>
         <a
           href="https://www.instagram.com/emzardesigns/"

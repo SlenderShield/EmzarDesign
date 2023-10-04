@@ -132,13 +132,18 @@ const AboutUsPage = () => {
           transforms into the tangible, where dreams become fixtures, and where
           every detail is woven into the fabric of exceptional design.
         </p>
-        <p className="">
-          Siddiq Ahmed:{" "}
-          <a href="tel:9108151481">
+        <p>
+          Siddiq Ahmed:{"  "}
+          <a href="tel:+919108151481">
             <BsFillTelephoneFill className="inline-block mb-1 mr-1" />
-            9108151481
+            +91 9108151481
           </a>
         </p>
+        <address>
+          <p>#8 1st cross veeraan palya,</p>
+          <p>Arabic Collage post, Hebbal, </p>
+          <p>Bengaluru, Karnataka 560045 India</p>
+        </address>
       </div>
       <InfoGraph {...infographicData} />
       <div className="mx-auto w-4/5 md:w-5/6 xl:w-4/5 mt-10">
