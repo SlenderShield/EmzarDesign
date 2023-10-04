@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <div className="container mx-auto text-center mt-6">
+      <div className="container mx-auto text-center mt-6">
         <p>
           Made with <span className="text-red-500">&hearts;</span> by{" "}
           <a
@@ -124,7 +124,16 @@ const Footer = () => {
             SlenderShield
           </a>
         </p>
-      </div> */}
+        <p>
+          Icons by{" "}
+          <a
+            href="https://icons8.com"
+            className="text-white hover:text-blue-400"
+          >
+            Icons8
+          </a>
+        </p>
+      </div>
     </footer>
   );
 };
