@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 z-10 ${
+      className={`hidden md:block fixed bottom-8 right-8 z-10 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       } transition-opacity duration-300`}
     >

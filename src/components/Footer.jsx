@@ -6,7 +6,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="p-5 text-center bg-slate-800 text-white">
+    <footer className="pb-12 md:pb-0 p-5 text-center bg-slate-800 text-white">
       <div className="container mx-auto flex flex-wrap sm:justify-evenly flex-col sm:flex-row">
         <div className="hidden lg:flex flex-col ">
           <h3 className="text-lg font-bold mb-2 sm:mb-4 ">
@@ -90,7 +90,7 @@ const Footer = () => {
           </a>
           <a href="mailto:Emzardesign@gmail.com" className="text-white mr-2">
             <BiMailSend className="inline-block mr-1" />
-            Emzardesign@gmail.com
+            emzardesigns@gmail.com
           </a>
         </div>
         <div className="flex flex-col">

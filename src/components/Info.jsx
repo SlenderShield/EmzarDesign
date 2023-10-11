@@ -9,7 +9,7 @@ const Info = () => {
       {/* Mail Link */}
       <div className="flex flex-row ">
         <a
-          href="mailto:Emzardesign@gmail.com"
+          href="mailto:emzardesigns@gmail.com"
           className="text-black pb-1 sm:mr-2"
         >
           <BiMailSend className="inline-block mr-1 text-2xl" />
@@ -39,7 +39,10 @@ const Info = () => {
         >
           <FaInstagram />
         </a>
-        <a href="https://linkedin.com" className="text-black">
+        <a
+          href="https://www.linkedin.com/company/ayat-design/"
+          className="text-black"
+        >
           <FaLinkedin />
         </a>
       </div>

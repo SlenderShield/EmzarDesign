@@ -68,10 +68,10 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div className="md:hidden flex items-center">
-            <button
+            <a
               type="button"
               onClick={toggleMenu}
-              className="text-stone-50 hover:bg-stone-50 focus:outline-none focus:text-stone-50"
+              className="text-white  focus:outline-none bg-none"
               aria-label="Toggle menu"
             >
               <svg
@@ -96,7 +96,75 @@ const Navbar = () => {
                   />
                 )}
               </svg>
-            </button>
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile Menu Dropdown */}
+
+        <div className="md:hidden">
+          <div className="fixed flex bottom-0 right-0 w-full z-10 bg-white justify-evenly ">
+            <NavLink
+              to="/"
+              className="text-black flex flex-col justify-center items-center"
+              exact
+            >
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/home.png"
+                alt="home"
+              />
+              <p className="text-sm">Home</p>
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className="text-black flex flex-col justify-center items-center"
+            >
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/home.png"
+                alt="home"
+              />
+              <p className="text-sm">Projects</p>
+            </NavLink>
+            <NavLink
+              to="/gallery"
+              className="text-black flex flex-col justify-center items-center"
+            >
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/home.png"
+                alt="home"
+              />
+              <p className="text-sm"> Gallery</p>
+            </NavLink>
+            <NavLink
+              to="/about-us"
+              className="text-black flex flex-col justify-center items-center"
+            >
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/home.png"
+                alt="home"
+              />
+              <p className="text-sm">About Us</p>
+            </NavLink>
+            <NavLink
+              to="/contact-us"
+              className="text-black flex flex-col justify-center items-center"
+            >
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/home.png"
+                alt="home"
+              />
+              <p className="text-sm">Contact Us</p>
+            </NavLink>
           </div>
         </div>
 

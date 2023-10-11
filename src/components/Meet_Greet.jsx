@@ -1,5 +1,6 @@
 import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
+
 const ContactButton = ({ link, description, height }) => {
   const handleRedirect = () => {
     window.open(link, "_blank");
@@ -10,7 +11,7 @@ const ContactButton = ({ link, description, height }) => {
     right: "16px",
   };
   if (description === "Whatsapp") {
-    description = <BsWhatsapp className="text-2xl m-1" />;
+    description = <BsWhatsapp className="text-base md:text-2xl m-1" />;
   }
 
   return (
@@ -20,7 +21,7 @@ const ContactButton = ({ link, description, height }) => {
         onClick={handleRedirect}
         formTarget="_blank"
       >
-        {description}
+        <p className="text-sm">{description}</p>
       </button>
     </div>
   );
