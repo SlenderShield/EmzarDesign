@@ -71,7 +71,7 @@ const ProjectDetailsPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 text-center">
-      <h1 className="text-3xl font-bold mb-4 text-white font-mono">{title}</h1>
+      <h1 className="text-3xl font-bold mb-4  font-mono">{title}</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="carousel">
@@ -88,10 +88,14 @@ const ProjectDetailsPage = () => {
           </Carousel>
         </div>
 
-        <div className="text-left">
-          <h2 className="text-2xl ">{tagLine}</h2>
+        <div className="px-5">
+          <h2 className="text-lg md:text-2xl text-center md:text-left">
+            {tagLine}
+          </h2>
           <br />
-          <p className="text-lg">{description}</p>
+          <p className="text-sm md:text-lg text-justify md:text-left ">
+            {description}
+          </p>
         </div>
       </div>
 

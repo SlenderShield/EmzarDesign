@@ -103,17 +103,17 @@ const Navbar = () => {
         {/* Mobile Menu Dropdown */}
 
         <div className="md:hidden">
-          <div className="fixed flex bottom-0 right-0 w-full z-10 bg-white justify-evenly ">
+          <div className="fixed flex bottom-0 right-0 w-full z-10 bg-white justify-evenly p-1">
             <NavLink
               to="/"
               className="text-black flex flex-col justify-center items-center"
               exact
             >
               <img
-                width="30"
-                height="30"
-                src="https://img.icons8.com/ios-glyphs/30/home.png"
-                alt="home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-outlined/24/home--v2.png"
+                alt="home--v2"
               />
               <p className="text-sm">Home</p>
             </NavLink>
@@ -122,10 +122,10 @@ const Navbar = () => {
               className="text-black flex flex-col justify-center items-center"
             >
               <img
-                width="30"
-                height="30"
-                src="https://img.icons8.com/ios-glyphs/30/home.png"
-                alt="home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-outlined/24/group-of-projects.png"
+                alt="group-of-projects"
               />
               <p className="text-sm">Projects</p>
             </NavLink>
@@ -134,10 +134,10 @@ const Navbar = () => {
               className="text-black flex flex-col justify-center items-center"
             >
               <img
-                width="30"
-                height="30"
-                src="https://img.icons8.com/ios-glyphs/30/home.png"
-                alt="home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-outlined/24/gallery.png"
+                alt="gallery"
               />
               <p className="text-sm"> Gallery</p>
             </NavLink>
@@ -146,10 +146,10 @@ const Navbar = () => {
               className="text-black flex flex-col justify-center items-center"
             >
               <img
-                width="30"
-                height="30"
-                src="https://img.icons8.com/ios-glyphs/30/home.png"
-                alt="home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-outlined/24/about.png"
+                alt="about"
               />
               <p className="text-sm">About Us</p>
             </NavLink>
@@ -158,10 +158,10 @@ const Navbar = () => {
               className="text-black flex flex-col justify-center items-center"
             >
               <img
-                width="30"
-                height="30"
-                src="https://img.icons8.com/ios-glyphs/30/home.png"
-                alt="home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-outlined/24/business-contact.png"
+                alt="business-contact"
               />
               <p className="text-sm">Contact Us</p>
             </NavLink>
