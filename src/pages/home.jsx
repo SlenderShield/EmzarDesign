@@ -6,7 +6,7 @@ import NavigationMenu from "../components/NavigationCard";
 import CallToAction from "../components/CallToAction";
 import images from "../images";
 import InfoGraph from "../components/InfoGraph";
-import { FaCalendarWeek, FaHome, FaCalendarDay } from "react-icons/fa";
+
 const Home = () => {
   const image_array = [
     {
@@ -65,8 +65,8 @@ const Home = () => {
           <img
             width="100"
             height="100"
-            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-designer-creativity-flaticons-lineal-color-flat-icons.png"
-            alt="external-designer-creativity-flaticons-lineal-color-flat-icons"
+            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-designer-web-development-flaticons-lineal-color-flat-icons-3.png"
+            alt="designer"
           />
         ),
         label: "Expert Designers",
@@ -76,8 +76,8 @@ const Home = () => {
           <img
             width="100"
             height="100"
-            src="https://img.icons8.com/laces/64/warranty.png"
-            alt="warranty"
+            src="https://img.icons8.com/clouds/100/contract.png"
+            alt="Warranty"
           />
         ),
         label: "Up to 10-years material warranty",

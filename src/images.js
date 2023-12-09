@@ -53,6 +53,16 @@ import kitchen_main from '../assets/SNN/kitchen_main.jpeg'
 import tv_area from '../assets/SNN/tv_area.jpeg'
 import kitchen_two from '../assets/SNN/kitchen_two.jpeg'
 
+import bedroom_center from '../assets/Good/bedroom_center.jpg';
+import bedroom_side_zoom from '../assets/Good/bedroom_side_zoom.jpg';
+import bedroom_side from '../assets/Good/bedroom_side.jpg';
+import bedroom_good from '../assets/Good/bedroom.jpg';
+import dining_center from '../assets/Good/dining_center.jpg';
+import kitchen_good from '../assets/Good/kitchen.jpg';
+import wardrobe from '../assets/Good/wardrobe.jpg';
+import scr_img from '../assets/Good/scr_img.jpg';
+import scrol_img from '../assets/Good/scrol_img.jpg';
+
 const images = {
     'Master Bedroom': {
         mb_side_view: mbSideView,
@@ -88,6 +98,15 @@ const images = {
         wide_sofa: wideSofa,
         wide_view: wideView,
     },
+    'Good': {
+        bedroom_center,
+        bedroom_side,
+        bedroom_side_zoom,
+        bedroom_good,
+        dining_center,
+        kitchen_good,
+        wardrobe
+    },
     'features': {
         one: feature1,
         logo,
@@ -99,7 +118,9 @@ const images = {
         one_object: feature1,
         lounge,
         dinner_set,
-        drawer
+        drawer,
+        scr_img,
+        scrol_img
     },
     "Coffee_Shop": {
         five,

@@ -5,6 +5,13 @@ import images from "../images";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -108,6 +115,7 @@ const Navbar = () => {
               to="/"
               className="text-black flex flex-col justify-center items-center"
               exact
+              onClick={scrollToTop}
             >
               <img
                 width="24"
@@ -120,6 +128,7 @@ const Navbar = () => {
             <NavLink
               to="/projects"
               className="text-black flex flex-col justify-center items-center"
+              onClick={scrollToTop}
             >
               <img
                 width="24"
@@ -132,6 +141,7 @@ const Navbar = () => {
             <NavLink
               to="/gallery"
               className="text-black flex flex-col justify-center items-center"
+              onClick={scrollToTop}
             >
               <img
                 width="24"
@@ -144,6 +154,7 @@ const Navbar = () => {
             <NavLink
               to="/about-us"
               className="text-black flex flex-col justify-center items-center"
+              onClick={scrollToTop}
             >
               <img
                 width="24"
@@ -156,6 +167,7 @@ const Navbar = () => {
             <NavLink
               to="/contact-us"
               className="text-black flex flex-col justify-center items-center"
+              onClick={scrollToTop}
             >
               <img
                 width="24"
