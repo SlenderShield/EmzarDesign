@@ -63,6 +63,20 @@ const HeroSection = () => {
                     className="carousel-image"
                   />
                 </div>
+                <div className="carousel-image-container">
+                  <img
+                    src={images["objects"].scr_img}
+                    alt="Hero Image 4"
+                    className="carousel-image"
+                  />
+                </div>
+                <div className="carousel-image-container">
+                  <img
+                    src={images["objects"].scrol_img}
+                    alt="Hero Image 4"
+                    className="carousel-image"
+                  />
+                </div>
               </Carousel>
             </div>
           </div>

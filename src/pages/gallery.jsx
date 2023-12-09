@@ -69,7 +69,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "SNN Real Time",
+    title: "Apartment Real Images",
     images: [
       images["SNN"].bedroom,
       images["SNN"].tv_area,
@@ -78,6 +78,19 @@ const projects = [
       images["SNN"].kitchen_main,
       images["SNN"].kitchen_two,
       images["SNN"].closet,
+    ],
+  },
+  {
+    id: 7,
+    title: "SNN Clermont Apartment",
+    images: [
+      images["Good"].bedroom_center,
+      images["Good"].bedroom_good,
+      images["Good"].bedroom_side,
+      images["Good"].bedroom_side_zoom,
+      images["Good"].dining_center,
+      images["Good"].kitchen_good,
+      images["Good"].wardrobe,
     ],
   },
 ];
